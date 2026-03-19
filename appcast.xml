@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Parallel Media Encoder</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Thu, 19 Mar 2026 11:29:56 -0400</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.0.zip" length="27774357" type="application/octet-stream" sparkle:edSignature="XecvtmYILPWy1/mz2X8RZSyyO4gfWUjlwdSr6aSThh64kZZpOawUn3euDANMeE9xD+JV7GFONXpUyhqWYpO6Dg=="/>
+        </item>
+    </channel>
+</rss>
