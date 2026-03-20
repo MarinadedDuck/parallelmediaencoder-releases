@@ -3,19 +3,24 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>1.02</title>
+            <pubDate>Fri, 20 Mar 2026 16:19:00 -0400</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.02</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.02.zip" length="27830048" type="application/octet-stream" sparkle:edSignature="lf6tl36yb3IPlosgxQM7ZIJGN/u5lO9qHxThLE1SkLcVp5h8fGKl27BnYlhl09A0DKQbcXm/em51pQ9NRfPQBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder3-2.delta" sparkle:deltaFrom="2" length="727786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WWVWYqr5/PNFLeUOJDDcW84Dz6zt6PwlI78FvJdGxzakeCcOeUOELVqBeBydE0Xr5BpA9i5O24ycuDxPdRimCg=="/>
+                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder3-1.delta" sparkle:deltaFrom="1" length="856918" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IB9hEcDJURzvo4yzAxaeitVDEyAa065P716rczoj0XNdRnQoi7TJMkXh9t9Y5T5Mt+Wav7wfRMwbJ68feLErBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>Version 1.01</title>
-            <description><![CDATA[
-                <h2>What's New in 1.01</h2>
-                <ul>
-                    <li><strong>Version display</strong> — The app version is now shown in the bottom-right corner of the main window.</li>
-                    <li><strong>Scrollable settings</strong> — The General settings tab now scrolls when content exceeds the window height.</li>
-                </ul>
-            ]]></description>
             <pubDate>Thu, 19 Mar 2026 23:19:01 -0400</pubDate>
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>1.01</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.01.zip" length="27794143" type="application/octet-stream" sparkle:edSignature="Ftv2pwO9NekgvzAQAyLLpXquhLsdwDCTzNt4fR4H7TSaZxrIdWDb4FuyKY0RcwMJU736j4m3Y8ZZb1iDxiRQCQ=="/>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.01.zip" length="27794143" type="application/octet-stream" sparkle:edSignature="zM20l+E/B16tjcp56Z8efQMGDUUl2OgorTOLysP1dI6gyAVHGnIziMC56rlFss0Gi0VkMSqwh3J0xIIb/057DA=="/>
             <sparkle:deltas>
                 <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder2-1.delta" sparkle:deltaFrom="1" length="712906" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K/IO+iTeJl87Hqa+u09zy5SAGsrqrkMSSPiCZSCqSmR3X5YksC1bOhKh9FEMQ1UsOHO4zAYmFnBw8Qg/7keNBQ=="/>
             </sparkle:deltas>
