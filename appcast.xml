@@ -3,12 +3,30 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.01</title>
+            <description><![CDATA[
+                <h2>What's New in 1.01</h2>
+                <ul>
+                    <li><strong>Version display</strong> — The app version is now shown in the bottom-right corner of the main window.</li>
+                    <li><strong>Scrollable settings</strong> — The General settings tab now scrolls when content exceeds the window height.</li>
+                </ul>
+            ]]></description>
+            <pubDate>Thu, 19 Mar 2026 23:19:01 -0400</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.01</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.01.zip" length="27794143" type="application/octet-stream" sparkle:edSignature="Ftv2pwO9NekgvzAQAyLLpXquhLsdwDCTzNt4fR4H7TSaZxrIdWDb4FuyKY0RcwMJU736j4m3Y8ZZb1iDxiRQCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder2-1.delta" sparkle:deltaFrom="1" length="712906" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K/IO+iTeJl87Hqa+u09zy5SAGsrqrkMSSPiCZSCqSmR3X5YksC1bOhKh9FEMQ1UsOHO4zAYmFnBw8Qg/7keNBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Thu, 19 Mar 2026 11:29:56 -0400</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.0.zip" length="27774357" type="application/octet-stream" sparkle:edSignature="XecvtmYILPWy1/mz2X8RZSyyO4gfWUjlwdSr6aSThh64kZZpOawUn3euDANMeE9xD+JV7GFONXpUyhqWYpO6Dg=="/>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.0.zip" length="27776608" type="application/octet-stream" sparkle:edSignature="hyWY8+DPNjEjEz50FVjxBdcYB9UXl4oMJh+AMNYBIAb4TGD9+E0ud3TEHqQfqvvQSJEWEpUCCeF8YYvZ3MkOCw=="/>
         </item>
     </channel>
 </rss>
