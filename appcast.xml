@@ -42,7 +42,7 @@
             <sparkle:version>3</sparkle:version>
             <sparkle:shortVersionString>1.02</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.02.zip" length="32326388" type="application/octet-stream" sparkle:edSignature="6vy3Z6c4oFrht01GR3BYqEMnfYBtP9zY4OfVNS5QpfWhZJunYwBHhbb2fyxgXuFpapzaJFRG08X3zrThCL2rCw=="/>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.02.zip" length="27830048" type="application/octet-stream" sparkle:edSignature="lf6tl36yb3IPlosgxQM7ZIJGN/u5lO9qHxThLE1SkLcVp5h8fGKl27BnYlhl09A0DKQbcXm/em51pQ9NRfPQBw=="/>
             <sparkle:deltas>
                 <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder3-2.delta" sparkle:deltaFrom="2" length="727786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WWVWYqr5/PNFLeUOJDDcW84Dz6zt6PwlI78FvJdGxzakeCcOeUOELVqBeBydE0Xr5BpA9i5O24ycuDxPdRimCg=="/>
                 <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder3-1.delta" sparkle:deltaFrom="1" length="856918" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IB9hEcDJURzvo4yzAxaeitVDEyAa065P716rczoj0XNdRnQoi7TJMkXh9t9Y5T5Mt+Wav7wfRMwbJ68feLErBg=="/>
@@ -58,6 +58,14 @@
             <sparkle:deltas>
                 <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder2-1.delta" sparkle:deltaFrom="1" length="712906" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K/IO+iTeJl87Hqa+u09zy5SAGsrqrkMSSPiCZSCqSmR3X5YksC1bOhKh9FEMQ1UsOHO4zAYmFnBw8Qg/7keNBQ=="/>
             </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.0</title>
+            <pubDate>Thu, 19 Mar 2026 11:29:56 -0400</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.0.zip" length="27776608" type="application/octet-stream" sparkle:edSignature="hyWY8+DPNjEjEz50FVjxBdcYB9UXl4oMJh+AMNYBIAb4TGD9+E0ud3TEHqQfqvvQSJEWEpUCCeF8YYvZ3MkOCw=="/>
         </item>
     </channel>
 </rss>
