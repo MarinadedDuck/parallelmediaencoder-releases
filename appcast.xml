@@ -19,11 +19,6 @@
             <sparkle:shortVersionString>1.03</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
             <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.03.zip" length="32326332" type="application/octet-stream" sparkle:edSignature="/Oxba68yKWEgoVzYlLaxGgVFzYiTQGiW6fK0ZouIXAzVfxiMCDyvXO9ph6kKh1DRKQDsNsTd3nzMR1br4suhBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder4-3.delta" sparkle:deltaFrom="3" length="47682" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="RJTxcBsmZEPhp1qSWeRY+rkHjROeuVj9D8r85f1AA9eK1K4pTISndvdc6TOek5/hGF+3CGPVw6pNw9jFW/hkAw=="/>
-                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder4-2.delta" sparkle:deltaFrom="2" length="2837358" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bIVe9XLFvw93aaWn7XAMvlmb7GimJvMl2maqgRkMLsiZy1Coova13DyRcYVnSxaBMj/wTm3pjVAfi9awWQl4DQ=="/>
-                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder4-1.delta" sparkle:deltaFrom="1" length="2912526" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Fdpu69r/NSSFzp9+vzHTuUiuWcYOFmlpnkIx81eHXlWFZ3SF5anLGfN59P3HN23Y5etCUz3a31/y0nocOqtwAg=="/>
-            </sparkle:deltas>
         </item>
         <item>
             <title>Version 1.02</title>
