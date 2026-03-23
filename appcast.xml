@@ -3,6 +3,33 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.05</title>
+            <description><![CDATA[
+<h3>What's New in 1.05</h3>
+<ul>
+  <li><b>New:</b> Conflict resolution sheet — when queueing files with naming conflicts, a new sheet shows all conflicts with editable filenames, real-time validation, and per-item remove buttons</li>
+  <li><b>New:</b> Smart numeric suffixes — output collisions are resolved with _1, _2, etc. Re-queueing video_1.mov correctly increments to _2 instead of _1_1</li>
+  <li><b>New:</b> Queue now shows the output filename instead of the source filename</li>
+  <li><b>New:</b> You can now overwrite existing output files — the app warns and offers Replace, Rename, or Go Back instead of forcing a rename</li>
+  <li><b>Improved:</b> Sources selection highlight for easier identification</li>
+  <li><b>Improved:</b> Update checks on every launch</li>
+  <li><b>Improved:</b> Audio codec validation — bit depth clamped to valid ranges for the selected codec</li>
+  <li><b>Improved:</b> Output suffix text field is always editable</li>
+  <li><b>Fixed:</b> Overlay and LUT settings lost when "Keep sources in staging" was enabled</li>
+  <li><b>Fixed:</b> Burn-in timecode drift — frame counter now uses rounding instead of truncation</li>
+  <li><b>Fixed:</b> Burn-in timecode mismatch when output frame rate differs from source</li>
+  <li><b>Fixed:</b> Overlay scaling when output resolution differs from source</li>
+  <li><b>Fixed:</b> AAC audio encoding failure with 32-bit bit depth</li>
+  <li><b>Fixed:</b> False "overwrite source" warning when transcoding to a different container format</li>
+</ul>
+            ]]></description>
+            <pubDate>Mon, 23 Mar 2026 14:09:32 -0400</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.05</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.05.zip" length="32504625" type="application/octet-stream" sparkle:edSignature="2BRvJSsNTAkS7pw/0YIFk+GGv2w8O7XzZ2OqCMiPt/LZUzrrYMu+basY9aLEzZoO7aZ2RhKORe00xEuFqwiUAQ=="/>
+        </item>
+        <item>
             <title>Version 1.04</title>
             <description><![CDATA[
 <h3>What's New in 1.04</h3>
