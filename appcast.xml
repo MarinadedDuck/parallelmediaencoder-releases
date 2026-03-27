@@ -3,6 +3,28 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.09</title>
+            <description><![CDATA[
+<h3>What's New in 1.09</h3>
+<p>Watch folders for automatic transcoding — drop media into a folder and PME picks it up, applies a preset, and transcodes to your output location in the background.</p>
+<ul>
+  <li><b>New: Watch Folders (Pro)</b> — Configure folders to monitor for new media. PME polls at a configurable interval (1–60 min), moves files to a PickedUp subfolder, and auto-queues them with your chosen preset and output location</li>
+  <li><b>New: Watch Folders Window</b> — Dedicated management window with add/edit/remove, start/stop per folder, Scan Now button, and picked-up file counter</li>
+  <li><b>New: CLI Watch Commands (Pro)</b> — <code>pme watch add/list/start/stop/remove</code> for terminal-based watch folder management. Shared config with the GUI</li>
+  <li><b>New: Network Folder Support</b> — Watch folders work with SMB, NFS, and AFP mounted volumes via polling</li>
+  <li><b>New: Delete Key Source Removal</b> — Select sources and press Delete/Backspace to remove them</li>
+  <li><b>New: Undo/Redo</b> — Cmd+Z to undo removed sources, Cmd+Shift+Z to redo. Works for single, multi-select, and "Remove Unsupported"</li>
+  <li><b>Improved: Queue Integration</b> — Watch folder jobs share the main queue with a green "Watch Folder" badge. Status bar shows active watch folder count</li>
+  <li><b>Improved: Shutdown Guard</b> — Warning dialog when quitting with active watch folders or encodes</li>
+</ul>
+            ]]></description>
+            <pubDate>Fri, 27 Mar 2026 11:05:15 -0400</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.09</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.09.zip" length="32857996" type="application/octet-stream" sparkle:edSignature="09JWIN0oYKr148it5iHltEUYDXIaYIMvfVwC8LAeoUkooXEUTC/lXMJAe1LLPFAvndkn4OmvmFerQ6dpuIZMCw=="/>
+        </item>
+        <item>
             <title>Version 1.07</title>
             <description><![CDATA[
 <h3>What's New in 1.07</h3>
