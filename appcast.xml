@@ -3,6 +3,30 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.10</title>
+            <description><![CDATA[
+<h3>What's New in 1.10</h3>
+<p>Watch folder hardening — network share credentials, smart error handling, drag-and-drop folder setup, configurable PickedUp destinations, and full scan logging.</p>
+<ul>
+  <li><b>New: Network Share Credentials (Pro)</b> — Store username and password per watch folder for automatic remounting when SMB/NFS/AFP shares disconnect. Passwords stored securely in macOS Keychain</li>
+  <li><b>New: Auto-Remount</b> — PME detects disconnected network shares and automatically attempts to remount using stored credentials. Manual "Mount" button available in the watch folder row</li>
+  <li><b>New: Watch Folder Validation</b> — Output folder cannot be inside the watch folder (prevents infinite loops). Watch folders cannot overlap as parent/child of each other</li>
+  <li><b>New: Custom PickedUp Destinations</b> — Move detected files to any folder on the same volume instead of the default PickedUp subfolder. Configurable PickedUp folder name in Settings</li>
+  <li><b>New: Drag &amp; Drop Folder Setup</b> — Drag folders from Finder directly onto the Watch Folder, Output, and PickedUp fields in the settings sheet</li>
+  <li><b>New: Watch Folder Scan Logging</b> — Full scan activity logged to the console window with file counts, stability checks, move operations, and error diagnosis</li>
+  <li><b>New: Expanded Insta360 Metadata</b> — Improved metadata extraction for Insta360 .insv footage</li>
+  <li><b>Improved: Structured Error Handling</b> — Watch folder errors now distinguish between folder deleted, volume unmounted, network disconnected, and permission denied</li>
+  <li><b>Improved: Clickable Folder Pills</b> — Watch, Output, and Moved-to folder names shown as colored pills that open the folder in Finder</li>
+  <li><b>Improved: CLI</b> — New <code>--picked-up-path</code>, <code>--network-user</code>, <code>--network-password</code> flags for <code>pme watch add</code></li>
+</ul>
+            ]]></description>
+            <pubDate>Sun, 29 Mar 2026 21:55:27 -0400</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.10.zip" length="33154928" type="application/octet-stream" sparkle:edSignature="IPr99zrOjG85lrbQqCc2zxZTaR+no3OqciuT7ZyZpMVXSWgUM/2uA0rEuMvTrYW2N0Z4e/wei4GE09Wc9M2yAg=="/>
+        </item>
+        <item>
             <title>Version 1.09</title>
             <description><![CDATA[
 <h3>What's New in 1.09</h3>
