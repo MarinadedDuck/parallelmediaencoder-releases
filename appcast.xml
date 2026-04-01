@@ -3,6 +3,32 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.11</title>
+            <description><![CDATA[
+<h3>What's New in 1.11</h3>
+<p>In/out point trimming, GIF export, watermark overlays, frame-accurate navigation, file size estimation, and updater error diagnostics.</p>
+<ul>
+  <li><b>New: In/Out Point Trimming (Pro)</b> — Mark sub-ranges with draggable handles, keyboard shortcuts (I/O/X), and timecode input. Works across all pipelines. CLI: <code>--in</code> / <code>--out</code></li>
+  <li><b>New: Watermark Overlay (Pro)</b> — Burn a transparent PNG watermark with scale, opacity, and drag-to-position. Live preview shows exact output placement</li>
+  <li><b>New: GIF Export</b> — Animated GIF output with configurable frame rate and loop count. <code>--codec gif</code> on CLI</li>
+  <li><b>New: Frame-Accurate Navigation</b> — Left/right arrow keys nudge the playhead by exactly one frame</li>
+  <li><b>New: File Size Estimation</b> — Redesigned Automatic quality mode targets 70% of source bitrate. New estimation table shows Source vs. Output with size comparison</li>
+  <li><b>New: No Audio Option</b> — Strip all audio tracks from the output</li>
+  <li><b>New: Sources Size Column</b> — Optional file size column in the Sources panel, sortable by size</li>
+  <li><b>New: Preset Search</b> — Search bar in the Presets panel to filter by name</li>
+  <li><b>Improved: Update Error Details</b> — When an auto-update fails, a follow-up alert now shows the specific reason (bad archive, signature failure, permission denied, etc.)</li>
+  <li><b>Improved: About Window</b> — Credits now shown in the About panel</li>
+  <li><b>Fixed:</b> Overlay positioning and clipping on non-16:9 and rotated sources</li>
+  <li><b>Fixed:</b> Backspace no longer removes sources when a text field is focused</li>
+</ul>
+            ]]></description>
+            <pubDate>Tue, 31 Mar 2026 18:45:48 -0400</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.11.zip" length="38190590" type="application/octet-stream" sparkle:edSignature="d6z455wU7zruVPJs7JV8UxwQTy0T3pcLmTtrjRcgQcmAkDILtTB7zmCpBNNxE7QIcihfd6rVoVazbgj5Wal2Bg=="/>
+        </item>
+        <item>
             <title>Version 1.10</title>
             <description><![CDATA[
 <h3>What's New in 1.10</h3>
