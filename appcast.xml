@@ -3,6 +3,31 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.121</title>
+            <description><![CDATA[
+<h3>What's New in 1.12</h3>
+<p>Camera RAW decode controls, LucidLink presets, 10-bit SDR encoding fixes, and encoding settings improvements.</p>
+<ul>
+  <li><b>New: Camera RAW Controls (R3D + BRAW)</b> — Floating always-on-top window for overriding RAW decode settings. Switch between "As Shot" (camera metadata) and "Custom" to adjust color science, color space, gamma, ISO, white balance, and exposure with real-time preview updates</li>
+  <li><b>New: RED R3D Controls</b> — Color science (Legacy/IPP2), color space (REDWideGamutRGB, Rec.709, Rec.2020, DCI-P3, and more), gamma curve (Log3G10, Log3G12, REDlogFilm, BT.1886, HLG, and more), ISO, and drag-to-scrub exposure control</li>
+  <li><b>New: Blackmagic RAW Controls</b> — Color space (BMD, Rec.709, Rec.2020, DCI-P3), gamma (BMD Film/Video/Extended Video, Rec.709), white balance, ISO, and exposure</li>
+  <li><b>New: LucidLink Presets</b> — Three presets for LucidLink cloud workflows: Normal (HEVC Main10, 21 Mbps), Proxy (HEVC Main, 14 Mbps, half res), High (HEVC Main10 4:2:2, 26 Mbps)</li>
+  <li><b>New: Encoding Profile Warnings</b> — Yellow warnings when selecting Main10 or 4:2:2 profiles on sources that don't benefit from them</li>
+  <li><b>New: Info Tooltips</b> — Hover info icons on Automatic quality, Profile, Keyframe Interval, and Scaled resolution settings</li>
+  <li><b>Fixed: 10-bit SDR encoding</b> — Sources like Canon XF-HEVC (10-bit 4:2:2) are no longer downgraded to 8-bit. Correct color metadata tags (bt709) now written on all HEVC/H.264 outputs</li>
+  <li><b>Fixed: hvcC bit depth parsing</b> — HEVC Rext sources now correctly report bit depth and chroma format in metadata</li>
+  <li><b>Improved: Automatic bitrate</b> — HEVC targets 50% of source bitrate (was 70%), H.264 targets 65%</li>
+  <li><b>Improved: H.264 Baseline</b> — B-Frames toggle grayed out when Baseline profile is selected</li>
+  <li><b>Improved: Update permission check</b> — Proactively warns if macOS App Management permission may block updates</li>
+</ul>
+            ]]></description>
+            <pubDate>Thu, 02 Apr 2026 00:59:07 -0400</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.121</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.121.zip" length="38467092" type="application/octet-stream" sparkle:edSignature="qeApy3kzOhpooG4gdnlOBjVU2lGNvzrIFxwwgE3R+tdidjV+9DsHNToiTFVKo3BKv3PYY5x4o9/HE7x6cQ3zAQ=="/>
+        </item>
+        <item>
             <title>Version 1.12</title>
             <description><![CDATA[
 <h3>What's New in 1.12</h3>
