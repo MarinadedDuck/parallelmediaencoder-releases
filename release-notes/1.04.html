@@ -1,0 +1,22 @@
+<html>
+<body style="font-family: -apple-system; font-size: 13px; color: #e5e5ea; background: transparent;">
+<h3>What's New in 1.04</h3>
+<ul>
+  <li><b>New:</b> Audio preview playback — hear audio while previewing video files (AVFoundation, MXF, MKV/WebM, BRAW, R3D)</li>
+  <li><b>New:</b> Audio-only file preview — mp3, wav, flac, and other audio files now show a waveform view with playback controls</li>
+  <li><b>New:</b> Volume slider and mute toggle in preview controls (persists across sessions)</li>
+  <li><b>New:</b> Pause/Resume queue — truly suspends active encodes mid-frame and resumes from the same position</li>
+  <li><b>New:</b> Toolbar shows icons with text labels, Add to Queue has Enter keyboard shortcut</li>
+  <li><b>New:</b> Encode menu with Add to Queue shortcut</li>
+  <li><b>Fixed:</b> Frame rate upconversion now works correctly for MP4/MOV files (was only fixed for MXF in v1.02)</li>
+  <li><b>Fixed:</b> Window close during encoding no longer causes looping quit dialog or crash — app stays in dock, click to restore</li>
+  <li><b>Fixed:</b> Partial output files cleaned up on cancel/quit (including AVAssetWriter journal files)</li>
+  <li><b>Fixed:</b> Queue clear no longer leaves orphaned job in settings panel</li>
+  <li><b>Fixed:</b> Cancel encoding shows confirmation dialog before cancelling</li>
+  <li><b>Fixed:</b> Insta360 .insv/.lrv transcoding crash with missing AVChannelLayoutKey</li>
+  <li><b>Fixed:</b> HEVC Main10 profile auto-downgrades to Main for 8-bit sources (prevents purple/white color corruption)</li>
+  <li><b>Fixed:</b> BRAW framework embedding no longer fails on incremental builds</li>
+  <li><b>Changed:</b> "Cost" terminology replaced with "Slots" in queue UI</li>
+</ul>
+</body>
+</html>

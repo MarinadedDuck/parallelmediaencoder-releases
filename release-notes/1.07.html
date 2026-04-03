@@ -1,0 +1,19 @@
+<html>
+<body style="font-family: -apple-system; font-size: 13px; color: #e5e5ea; background: transparent;">
+<h3>What's New in 1.07</h3>
+<p>Full vertical video support with rotation controls, a built-in metadata viewer, and resize modes (Stretch, Fit, Crop) for custom resolutions.</p>
+<ul>
+  <li><b>New: Video Rotation</b> — Rotate clips 90° CW/CCW with preview thumbnails. Works across all formats (MOV, MXF, BRAW, R3D, MKV). Batch rotation, CLI <code>--rotate</code> flag, and preset support included</li>
+  <li><b>New: Resize Modes</b> — Choose Stretch, Fit (letterbox), or Crop when using custom resolutions with mismatched aspect ratios. Visual side-by-side previews show each mode's effect</li>
+  <li><b>New: Override Settings</b> — Control parallel encode limits, GPU decode slots, and rotation memory limits from a new Settings tab</li>
+  <li><b>New: Session-Sticky Output Folder</b> — Picking an output folder now applies it to all unconfigured clips and future imports for the session</li>
+  <li><b>New: Vertical/Portrait Video</b> — Full orientation support for iPhone and portrait-shot video with correct dimension handling</li>
+  <li><b>New: Batch Custom Resolution</b> — Apply arbitrary custom resolutions with resize modes in batch mode</li>
+  <li><b>New: Keep Aspect Ratio Toggle</b> — Shows the source ratio (16:9, 9:16, 17:9, etc.) and snaps to AR-preserving values</li>
+  <li><b>Improved: PME Metadata</b> — All output files carry encode parameters; inspector shows a dedicated PME metadata section</li>
+  <li><b>Improved: Memory Management</b> — Rotation encodes use backpressure, reduced concurrency, and GPU resource reclamation to stay within system RAM</li>
+  <li><b>Fixed:</b> Multiple rotation pipeline bugs (squished BRAW/R3D, missing transforms in DNx path, operator precedence)</li>
+  <li><b>Fixed:</b> Portrait video orientation, resize mode persistence, batch settings sync</li>
+</ul>
+</body>
+</html>

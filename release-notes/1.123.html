@@ -1,0 +1,21 @@
+<html>
+<body style="font-family: -apple-system; font-size: 13px; color: #e5e5ea; background: transparent;">
+<h3>What's New in 1.123</h3>
+<p>Audio settings cleanup, smarter Automatic mode, file size estimation for all codecs, HDR overlay fixes, and a clearer update permission flow.</p>
+<ul>
+  <li><b>New: Simplified Audio Settings</b> — Single source of truth for track handling with clearer labels: Keep All Tracks, Mixdown to Mono, Mixdown to Stereo</li>
+  <li><b>New: Automatic Mode Reset</b> — Reset button beside Automatic re-evaluates audio and codec defaults from current source metadata</li>
+  <li><b>New: Automatic Codec Defaults</b> — HEVC auto-selects Main/Main10 based on source bit depth; H.264 auto-selects High profile</li>
+  <li><b>New: File Size Estimation for All Codecs</b> — The estimation table now appears for ProRes, DNxHR, DNxHD, and GIF — not just H.264/HEVC. Uses Apple-published ProRes data rates and matched DNx rates scaled by resolution and frame rate</li>
+  <li><b>New: Update Permission Screenshot</b> — The App Management permission alert now includes a screenshot showing exactly which toggle to enable</li>
+  <li><b>Improved: No-Audio Handling</b> — Sources without audio auto-select No Audio. Batch settings skip no-audio clips. No Audio added as explicit batch option</li>
+  <li><b>Improved: Batch Audio</b> — Batch audio changes apply to all selected clips and pending probes</li>
+  <li><b>Improved: Automatic Audio</b> — Compares pass-through vs re-encode size and picks the smaller output</li>
+  <li><b>Fixed: HDR pass-through on rotated clips</b> — HDR sources (e.g. BT.2020 HLG from iPhone) no longer appear burnt/orange after rotation or scaling</li>
+  <li><b>Fixed: HDR with overlays</b> — Timecode/watermark overlays no longer break HDR pass-through</li>
+  <li><b>Fixed: Overlay preview accuracy</b> — Timecode and watermark placement in preview now matches final output across vertical and 16:9 sources</li>
+  <li><b>Fixed: Timecode size slider</b> — Low-end values are no longer a dead zone</li>
+  <li><b>Fixed:</b> Conflicting audio options, preset-on-import no-audio edge case, Automatic timing stability</li>
+</ul>
+</body>
+</html>

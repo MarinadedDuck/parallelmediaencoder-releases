@@ -1,0 +1,18 @@
+<html>
+<body style="font-family: -apple-system; font-size: 13px; color: #e5e5ea; background: transparent;">
+<h3>What's New in 1.10</h3>
+<p>Watch folder hardening — network share credentials, smart error handling, drag-and-drop folder setup, configurable PickedUp destinations, and full scan logging.</p>
+<ul>
+  <li><b>New: Network Share Credentials (Pro)</b> — Store username and password per watch folder for automatic remounting when SMB/NFS/AFP shares disconnect. Passwords stored securely in macOS Keychain</li>
+  <li><b>New: Auto-Remount</b> — PME detects disconnected network shares and automatically attempts to remount using stored credentials. Manual "Mount" button available in the watch folder row</li>
+  <li><b>New: Watch Folder Validation</b> — Output folder cannot be inside the watch folder (prevents infinite loops). Watch folders cannot overlap as parent/child of each other</li>
+  <li><b>New: Custom PickedUp Destinations</b> — Move detected files to any folder on the same volume instead of the default PickedUp subfolder. Configurable PickedUp folder name in Settings</li>
+  <li><b>New: Drag &amp; Drop Folder Setup</b> — Drag folders from Finder directly onto the Watch Folder, Output, and PickedUp fields in the settings sheet</li>
+  <li><b>New: Watch Folder Scan Logging</b> — Full scan activity logged to the console window with file counts, stability checks, move operations, and error diagnosis</li>
+  <li><b>New: Expanded Insta360 Metadata</b> — Improved metadata extraction for Insta360 .insv footage</li>
+  <li><b>Improved: Structured Error Handling</b> — Watch folder errors now distinguish between folder deleted, volume unmounted, network disconnected, and permission denied</li>
+  <li><b>Improved: Clickable Folder Pills</b> — Watch, Output, and Moved-to folder names shown as colored pills that open the folder in Finder</li>
+  <li><b>Improved: CLI</b> — New <code>--picked-up-path</code>, <code>--network-user</code>, <code>--network-password</code> flags for <code>pme watch add</code></li>
+</ul>
+</body>
+</html>

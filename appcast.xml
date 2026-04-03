@@ -4,14 +4,7 @@
         <title>Parallel Media Encoder</title>
         <item>
             <title>Version 1.124</title>
-            <description><![CDATA[
-<h3>What's New in 1.124</h3>
-<p>Tooltip UI fixes for macOS 14/15 and other UI bug fixes.</p>
-<ul>
-  <li><b>Fixed: Info tooltip popovers on macOS 14/15</b> — Tooltip popovers no longer stretch to extreme height on macOS Sonoma and Sequoia</li>
-  <li><b>Fixed:</b> Other minor UI bug fixes</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.124.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 03 Apr 2026 15:15:50 -0400</pubDate>
             <sparkle:version>16</sparkle:version>
             <sparkle:shortVersionString>1.124</sparkle:shortVersionString>
@@ -20,25 +13,7 @@
         </item>
         <item>
             <title>Version 1.123</title>
-            <description><![CDATA[
-<h3>What's New in 1.123</h3>
-<p>Audio settings cleanup, smarter Automatic mode, file size estimation for all codecs, HDR overlay fixes, and a clearer update permission flow.</p>
-<ul>
-  <li><b>New: Simplified Audio Settings</b> — Single source of truth for track handling with clearer labels: Keep All Tracks, Mixdown to Mono, Mixdown to Stereo</li>
-  <li><b>New: Automatic Mode Reset</b> — Reset button beside Automatic re-evaluates audio and codec defaults from current source metadata</li>
-  <li><b>New: Automatic Codec Defaults</b> — HEVC auto-selects Main/Main10 based on source bit depth; H.264 auto-selects High profile</li>
-  <li><b>New: File Size Estimation for All Codecs</b> — The estimation table now appears for ProRes, DNxHR, DNxHD, and GIF — not just H.264/HEVC. Uses Apple-published ProRes data rates and matched DNx rates scaled by resolution and frame rate</li>
-  <li><b>New: Update Permission Screenshot</b> — The App Management permission alert now includes a screenshot showing exactly which toggle to enable</li>
-  <li><b>Improved: No-Audio Handling</b> — Sources without audio auto-select No Audio. Batch settings skip no-audio clips. No Audio added as explicit batch option</li>
-  <li><b>Improved: Batch Audio</b> — Batch audio changes apply to all selected clips and pending probes</li>
-  <li><b>Improved: Automatic Audio</b> — Compares pass-through vs re-encode size and picks the smaller output</li>
-  <li><b>Fixed: HDR pass-through on rotated clips</b> — HDR sources (e.g. BT.2020 HLG from iPhone) no longer appear burnt/orange after rotation or scaling</li>
-  <li><b>Fixed: HDR with overlays</b> — Timecode/watermark overlays no longer break HDR pass-through</li>
-  <li><b>Fixed: Overlay preview accuracy</b> — Timecode and watermark placement in preview now matches final output across vertical and 16:9 sources</li>
-  <li><b>Fixed: Timecode size slider</b> — Low-end values are no longer a dead zone</li>
-  <li><b>Fixed:</b> Conflicting audio options, preset-on-import no-audio edge case, Automatic timing stability</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.123.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 03 Apr 2026 02:51:51 -0400</pubDate>
             <sparkle:version>15</sparkle:version>
             <sparkle:shortVersionString>1.123</sparkle:shortVersionString>
@@ -47,23 +22,7 @@
         </item>
         <item>
             <title>Version 1.121</title>
-            <description><![CDATA[
-<h3>What's New in 1.12</h3>
-<p>Camera RAW decode controls, LucidLink presets, 10-bit SDR encoding fixes, and encoding settings improvements.</p>
-<ul>
-  <li><b>New: Camera RAW Controls (R3D + BRAW)</b> — Floating always-on-top window for overriding RAW decode settings. Switch between "As Shot" (camera metadata) and "Custom" to adjust color science, color space, gamma, ISO, white balance, and exposure with real-time preview updates</li>
-  <li><b>New: RED R3D Controls</b> — Color science (Legacy/IPP2), color space (REDWideGamutRGB, Rec.709, Rec.2020, DCI-P3, and more), gamma curve (Log3G10, Log3G12, REDlogFilm, BT.1886, HLG, and more), ISO, and drag-to-scrub exposure control</li>
-  <li><b>New: Blackmagic RAW Controls</b> — Color space (BMD, Rec.709, Rec.2020, DCI-P3), gamma (BMD Film/Video/Extended Video, Rec.709), white balance, ISO, and exposure</li>
-  <li><b>New: LucidLink Presets</b> — Three presets for LucidLink cloud workflows: Normal (HEVC Main10, 21 Mbps), Proxy (HEVC Main, 14 Mbps, half res), High (HEVC Main10 4:2:2, 26 Mbps)</li>
-  <li><b>New: Encoding Profile Warnings</b> — Yellow warnings when selecting Main10 or 4:2:2 profiles on sources that don't benefit from them</li>
-  <li><b>New: Info Tooltips</b> — Hover info icons on Automatic quality, Profile, Keyframe Interval, and Scaled resolution settings</li>
-  <li><b>Fixed: 10-bit SDR encoding</b> — Sources like Canon XF-HEVC (10-bit 4:2:2) are no longer downgraded to 8-bit. Correct color metadata tags (bt709) now written on all HEVC/H.264 outputs</li>
-  <li><b>Fixed: hvcC bit depth parsing</b> — HEVC Rext sources now correctly report bit depth and chroma format in metadata</li>
-  <li><b>Improved: Automatic bitrate</b> — HEVC targets 50% of source bitrate (was 70%), H.264 targets 65%</li>
-  <li><b>Improved: H.264 Baseline</b> — B-Frames toggle grayed out when Baseline profile is selected</li>
-  <li><b>Improved: Update permission check</b> — Proactively warns if macOS App Management permission may block updates</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.121.html</sparkle:releaseNotesLink>
             <pubDate>Thu, 02 Apr 2026 00:59:07 -0400</pubDate>
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>1.121</sparkle:shortVersionString>
@@ -72,22 +31,7 @@
         </item>
         <item>
             <title>Version 1.12</title>
-            <description><![CDATA[
-<h3>What's New in 1.12</h3>
-<p>Camera RAW decode controls, LucidLink presets, 10-bit SDR encoding fixes, and encoding settings improvements.</p>
-<ul>
-  <li><b>New: Camera RAW Controls (R3D + BRAW)</b> — Floating always-on-top window for overriding RAW decode settings. Switch between "As Shot" (camera metadata) and "Custom" to adjust color science, color space, gamma, ISO, white balance, and exposure with real-time preview updates</li>
-  <li><b>New: RED R3D Controls</b> — Color science (Legacy/IPP2), color space (REDWideGamutRGB, Rec.709, Rec.2020, DCI-P3, and more), gamma curve (Log3G10, Log3G12, REDlogFilm, BT.1886, HLG, and more), ISO, and drag-to-scrub exposure control</li>
-  <li><b>New: Blackmagic RAW Controls</b> — Color space (BMD, Rec.709, Rec.2020, DCI-P3), gamma (BMD Film/Video/Extended Video, Rec.709), white balance, ISO, and exposure</li>
-  <li><b>New: LucidLink Presets</b> — Three presets for LucidLink cloud workflows: Normal (HEVC Main10, 21 Mbps), Proxy (HEVC Main, 14 Mbps, half res), High (HEVC Main10 4:2:2, 26 Mbps)</li>
-  <li><b>New: Encoding Profile Warnings</b> — Yellow warnings when selecting Main10 or 4:2:2 profiles on sources that don't benefit from them</li>
-  <li><b>New: Info Tooltips</b> — Hover info icons on Automatic quality, Profile, Keyframe Interval, and Scaled resolution settings</li>
-  <li><b>Fixed: 10-bit SDR encoding</b> — Sources like Canon XF-HEVC (10-bit 4:2:2) are no longer downgraded to 8-bit. Correct color metadata tags (bt709) now written on all HEVC/H.264 outputs</li>
-  <li><b>Fixed: hvcC bit depth parsing</b> — HEVC Rext sources now correctly report bit depth and chroma format in metadata</li>
-  <li><b>Improved: Automatic bitrate</b> — HEVC targets 50% of source bitrate (was 70%), H.264 targets 65%</li>
-  <li><b>Improved: H.264 Baseline</b> — B-Frames toggle grayed out when Baseline profile is selected</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.12.html</sparkle:releaseNotesLink>
             <pubDate>Thu, 02 Apr 2026 00:32:13 -0400</pubDate>
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.12</sparkle:shortVersionString>
@@ -96,24 +40,7 @@
         </item>
         <item>
             <title>Version 1.11</title>
-            <description><![CDATA[
-<h3>What's New in 1.11</h3>
-<p>In/out point trimming, GIF export, watermark overlays, frame-accurate navigation, file size estimation, and updater error diagnostics.</p>
-<ul>
-  <li><b>New: In/Out Point Trimming (Pro)</b> — Mark sub-ranges with draggable handles, keyboard shortcuts (I/O/X), and timecode input. Works across all pipelines. CLI: <code>--in</code> / <code>--out</code></li>
-  <li><b>New: Watermark Overlay (Pro)</b> — Burn a transparent PNG watermark with scale, opacity, and drag-to-position. Live preview shows exact output placement</li>
-  <li><b>New: GIF Export</b> — Animated GIF output with configurable frame rate and loop count. <code>--codec gif</code> on CLI</li>
-  <li><b>New: Frame-Accurate Navigation</b> — Left/right arrow keys nudge the playhead by exactly one frame</li>
-  <li><b>New: File Size Estimation</b> — Redesigned Automatic quality mode targets 70% of source bitrate. New estimation table shows Source vs. Output with size comparison</li>
-  <li><b>New: No Audio Option</b> — Strip all audio tracks from the output</li>
-  <li><b>New: Sources Size Column</b> — Optional file size column in the Sources panel, sortable by size</li>
-  <li><b>New: Preset Search</b> — Search bar in the Presets panel to filter by name</li>
-  <li><b>Improved: Update Error Details</b> — When an auto-update fails, a follow-up alert now shows the specific reason (bad archive, signature failure, permission denied, etc.)</li>
-  <li><b>Improved: About Window</b> — Credits now shown in the About panel</li>
-  <li><b>Fixed:</b> Overlay positioning and clipping on non-16:9 and rotated sources</li>
-  <li><b>Fixed:</b> Backspace no longer removes sources when a text field is focused</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.11.html</sparkle:releaseNotesLink>
             <pubDate>Tue, 31 Mar 2026 18:45:48 -0400</pubDate>
             <sparkle:version>11</sparkle:version>
             <sparkle:shortVersionString>1.11</sparkle:shortVersionString>
@@ -122,22 +49,7 @@
         </item>
         <item>
             <title>Version 1.10</title>
-            <description><![CDATA[
-<h3>What's New in 1.10</h3>
-<p>Watch folder hardening — network share credentials, smart error handling, drag-and-drop folder setup, configurable PickedUp destinations, and full scan logging.</p>
-<ul>
-  <li><b>New: Network Share Credentials (Pro)</b> — Store username and password per watch folder for automatic remounting when SMB/NFS/AFP shares disconnect. Passwords stored securely in macOS Keychain</li>
-  <li><b>New: Auto-Remount</b> — PME detects disconnected network shares and automatically attempts to remount using stored credentials. Manual "Mount" button available in the watch folder row</li>
-  <li><b>New: Watch Folder Validation</b> — Output folder cannot be inside the watch folder (prevents infinite loops). Watch folders cannot overlap as parent/child of each other</li>
-  <li><b>New: Custom PickedUp Destinations</b> — Move detected files to any folder on the same volume instead of the default PickedUp subfolder. Configurable PickedUp folder name in Settings</li>
-  <li><b>New: Drag &amp; Drop Folder Setup</b> — Drag folders from Finder directly onto the Watch Folder, Output, and PickedUp fields in the settings sheet</li>
-  <li><b>New: Watch Folder Scan Logging</b> — Full scan activity logged to the console window with file counts, stability checks, move operations, and error diagnosis</li>
-  <li><b>New: Expanded Insta360 Metadata</b> — Improved metadata extraction for Insta360 .insv footage</li>
-  <li><b>Improved: Structured Error Handling</b> — Watch folder errors now distinguish between folder deleted, volume unmounted, network disconnected, and permission denied</li>
-  <li><b>Improved: Clickable Folder Pills</b> — Watch, Output, and Moved-to folder names shown as colored pills that open the folder in Finder</li>
-  <li><b>Improved: CLI</b> — New <code>--picked-up-path</code>, <code>--network-user</code>, <code>--network-password</code> flags for <code>pme watch add</code></li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.10.html</sparkle:releaseNotesLink>
             <pubDate>Sun, 29 Mar 2026 21:55:27 -0400</pubDate>
             <sparkle:version>10</sparkle:version>
             <sparkle:shortVersionString>1.10</sparkle:shortVersionString>
@@ -146,20 +58,7 @@
         </item>
         <item>
             <title>Version 1.09</title>
-            <description><![CDATA[
-<h3>What's New in 1.09</h3>
-<p>Watch folders for automatic transcoding — drop media into a folder and PME picks it up, applies a preset, and transcodes to your output location in the background.</p>
-<ul>
-  <li><b>New: Watch Folders (Pro)</b> — Configure folders to monitor for new media. PME polls at a configurable interval (1–60 min), moves files to a PickedUp subfolder, and auto-queues them with your chosen preset and output location</li>
-  <li><b>New: Watch Folders Window</b> — Dedicated management window with add/edit/remove, start/stop per folder, Scan Now button, and picked-up file counter</li>
-  <li><b>New: CLI Watch Commands (Pro)</b> — <code>pme watch add/list/start/stop/remove</code> for terminal-based watch folder management. Shared config with the GUI</li>
-  <li><b>New: Network Folder Support</b> — Watch folders work with SMB, NFS, and AFP mounted volumes via polling</li>
-  <li><b>New: Delete Key Source Removal</b> — Select sources and press Delete/Backspace to remove them</li>
-  <li><b>New: Undo/Redo</b> — Cmd+Z to undo removed sources, Cmd+Shift+Z to redo. Works for single, multi-select, and "Remove Unsupported"</li>
-  <li><b>Improved: Queue Integration</b> — Watch folder jobs share the main queue with a green "Watch Folder" badge. Status bar shows active watch folder count</li>
-  <li><b>Improved: Shutdown Guard</b> — Warning dialog when quitting with active watch folders or encodes</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.09.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 27 Mar 2026 11:05:15 -0400</pubDate>
             <sparkle:version>9</sparkle:version>
             <sparkle:shortVersionString>1.09</sparkle:shortVersionString>
@@ -168,23 +67,7 @@
         </item>
         <item>
             <title>Version 1.07</title>
-            <description><![CDATA[
-<h3>What's New in 1.07</h3>
-<p>Full vertical video support with rotation controls, a built-in metadata viewer, and resize modes (Stretch, Fit, Crop) for custom resolutions.</p>
-<ul>
-  <li><b>New: Video Rotation</b> — Rotate clips 90° CW/CCW with preview thumbnails. Works across all formats (MOV, MXF, BRAW, R3D, MKV). Batch rotation, CLI <code>--rotate</code> flag, and preset support included</li>
-  <li><b>New: Resize Modes</b> — Choose Stretch, Fit (letterbox), or Crop when using custom resolutions with mismatched aspect ratios. Visual side-by-side previews show each mode's effect</li>
-  <li><b>New: Override Settings</b> — Control parallel encode limits, GPU decode slots, and rotation memory limits from a new Settings tab</li>
-  <li><b>New: Session-Sticky Output Folder</b> — Picking an output folder now applies it to all unconfigured clips and future imports for the session</li>
-  <li><b>New: Vertical/Portrait Video</b> — Full orientation support for iPhone and portrait-shot video with correct dimension handling</li>
-  <li><b>New: Batch Custom Resolution</b> — Apply arbitrary custom resolutions with resize modes in batch mode</li>
-  <li><b>New: Keep Aspect Ratio Toggle</b> — Shows the source ratio (16:9, 9:16, 17:9, etc.) and snaps to AR-preserving values</li>
-  <li><b>Improved: PME Metadata</b> — All output files carry encode parameters; inspector shows a dedicated PME metadata section</li>
-  <li><b>Improved: Memory Management</b> — Rotation encodes use backpressure, reduced concurrency, and GPU resource reclamation to stay within system RAM</li>
-  <li><b>Fixed:</b> Multiple rotation pipeline bugs (squished BRAW/R3D, missing transforms in DNx path, operator precedence)</li>
-  <li><b>Fixed:</b> Portrait video orientation, resize mode persistence, batch settings sync</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.07.html</sparkle:releaseNotesLink>
             <pubDate>Wed, 25 Mar 2026 22:36:59 -0400</pubDate>
             <sparkle:version>8</sparkle:version>
             <sparkle:shortVersionString>1.07</sparkle:shortVersionString>
@@ -193,17 +76,7 @@
         </item>
         <item>
             <title>Version 1.06</title>
-            <description><![CDATA[
-<h3>What's New in 1.06</h3>
-<ul>
-  <li><b>New: Command-Line Interface (Pro)</b> — <code>pme</code> CLI tool for headless transcoding, file probing, preset management, and license activation. Supports all codecs, presets, LUTs, and overlays. JSON output mode for scripting and automation. <a href="https://parallelmediaencoder.com/docs/cli/">CLI docs</a></li>
-  <li><b>New: Service Mode (Pro)</b> — run PME as a background daemon with a local REST API. Submit jobs, monitor progress, and control the queue over HTTP. Supports Unix domain sockets, TCP localhost, SSE progress streaming, bearer token auth, and launchd auto-start</li>
-  <li><b>New: AppleScript Support</b> — automate transcoding with <code>transcode</code>, <code>probe</code>, and <code>list presets</code> commands. Works with Script Editor, Automator, and Folder Actions for watch-folder workflows. <a href="https://parallelmediaencoder.com/docs/applescript/">AppleScript docs</a></li>
-  <li><b>New: Shortcuts / App Intents</b> — three Shortcuts actions (Transcode, Probe, List Presets) with Siri phrase support</li>
-  <li><b>New: Install CLI Tool</b> — menu item creates a <code>/usr/local/bin/pme</code> symlink for terminal access</li>
-  <li><b>Improved:</b> License activation now shows a thank-you message and displays the registered name and email from your Gumroad purchase</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.06.html</sparkle:releaseNotesLink>
             <pubDate>Tue, 24 Mar 2026 10:26:43 -0400</pubDate>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.06</sparkle:shortVersionString>
@@ -212,25 +85,7 @@
         </item>
         <item>
             <title>Version 1.05</title>
-            <description><![CDATA[
-<h3>What's New in 1.05</h3>
-<ul>
-  <li><b>New:</b> Conflict resolution sheet — when queueing files with naming conflicts, a new sheet shows all conflicts with editable filenames, real-time validation, and per-item remove buttons</li>
-  <li><b>New:</b> Smart numeric suffixes — output collisions are resolved with _1, _2, etc. Re-queueing video_1.mov correctly increments to _2 instead of _1_1</li>
-  <li><b>New:</b> Queue now shows the output filename instead of the source filename</li>
-  <li><b>New:</b> You can now overwrite existing output files — the app warns and offers Replace, Rename, or Go Back instead of forcing a rename</li>
-  <li><b>Improved:</b> Sources selection highlight for easier identification</li>
-  <li><b>Improved:</b> Update checks on every launch</li>
-  <li><b>Improved:</b> Audio codec validation — bit depth clamped to valid ranges for the selected codec</li>
-  <li><b>Improved:</b> Output suffix text field is always editable</li>
-  <li><b>Fixed:</b> Overlay and LUT settings lost when "Keep sources in staging" was enabled</li>
-  <li><b>Fixed:</b> Burn-in timecode drift — frame counter now uses rounding instead of truncation</li>
-  <li><b>Fixed:</b> Burn-in timecode mismatch when output frame rate differs from source</li>
-  <li><b>Fixed:</b> Overlay scaling when output resolution differs from source</li>
-  <li><b>Fixed:</b> AAC audio encoding failure with 32-bit bit depth</li>
-  <li><b>Fixed:</b> False "overwrite source" warning when transcoding to a different container format</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.05.html</sparkle:releaseNotesLink>
             <pubDate>Mon, 23 Mar 2026 14:09:32 -0400</pubDate>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.05</sparkle:shortVersionString>
@@ -239,26 +94,7 @@
         </item>
         <item>
             <title>Version 1.04</title>
-            <description><![CDATA[
-<h3>What's New in 1.04</h3>
-<ul>
-  <li><b>New:</b> Audio preview playback — hear audio while previewing video files (AVFoundation, MXF, MKV/WebM, BRAW, R3D)</li>
-  <li><b>New:</b> Audio-only file preview — mp3, wav, flac, and other audio files now show a waveform view with playback controls</li>
-  <li><b>New:</b> Volume slider and mute toggle in preview controls (persists across sessions)</li>
-  <li><b>New:</b> Pause/Resume queue — truly suspends active encodes mid-frame and resumes from the same position</li>
-  <li><b>New:</b> Toolbar shows icons with text labels, Add to Queue has Enter keyboard shortcut</li>
-  <li><b>New:</b> Encode menu with Add to Queue shortcut</li>
-  <li><b>Fixed:</b> Frame rate upconversion now works correctly for MP4/MOV files (was only fixed for MXF in v1.02)</li>
-  <li><b>Fixed:</b> Window close during encoding no longer causes looping quit dialog or crash — app stays in dock, click to restore</li>
-  <li><b>Fixed:</b> Partial output files cleaned up on cancel/quit (including AVAssetWriter journal files)</li>
-  <li><b>Fixed:</b> Queue clear no longer leaves orphaned job in settings panel</li>
-  <li><b>Fixed:</b> Cancel encoding shows confirmation dialog before cancelling</li>
-  <li><b>Fixed:</b> Insta360 .insv/.lrv transcoding crash with missing AVChannelLayoutKey</li>
-  <li><b>Fixed:</b> HEVC Main10 profile auto-downgrades to Main for 8-bit sources (prevents purple/white color corruption)</li>
-  <li><b>Fixed:</b> BRAW framework embedding no longer fails on incremental builds</li>
-  <li><b>Changed:</b> "Cost" terminology replaced with "Slots" in queue UI</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.04.html</sparkle:releaseNotesLink>
             <pubDate>Sun, 22 Mar 2026 11:22:54 -0400</pubDate>
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.04</sparkle:shortVersionString>
@@ -267,16 +103,7 @@
         </item>
         <item>
             <title>Version 1.03</title>
-            <description><![CDATA[
-<h3>What's New in 1.03</h3>
-<ul>
-  <li><b>Fixed:</b> Blackmagic RAW runtime is now embedded in the app — BRAW files no longer require a separate Blackmagic RAW SDK or Player install</li>
-  <li><b>Fixed:</b> RED R3D decoding now falls back to OpenCL or CPU when Metal GPU is unavailable (e.g. virtual machines)</li>
-  <li><b>Fixed:</b> Improved error messages when RAW codec initialization fails</li>
-  <li><b>Fixed:</b> Settings window and console now render correctly on Light Mode systems</li>
-  <li><b>New:</b> Welcome screen on first launch lets you enter a license key right away</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.03.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 20 Mar 2026 23:22:24 -0400</pubDate>
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>1.03</sparkle:shortVersionString>
@@ -285,17 +112,7 @@
         </item>
         <item>
             <title>Version 1.02</title>
-            <description><![CDATA[
-<h3>What's New in 1.02</h3>
-<ul>
-  <li><b>Fixed:</b> MXF frame rate conversion no longer stalls on longer files (e.g. 24fps → 30fps)</li>
-  <li><b>Fixed:</b> Frame rate upconversion now correctly duplicates frames to maintain duration</li>
-  <li><b>Fixed:</b> DNx media color accuracy — output now matches source contrast and includes correct BT.709 color tags</li>
-  <li><b>New:</b> Quit confirmation when encodes are running — no more accidental data loss</li>
-  <li><b>New:</b> Dock icon progress bar shows encode progress while the app is in the background</li>
-  <li><b>New:</b> Low frame rate options (5, 10, 15 fps) added to encoding settings</li>
-</ul>
-            ]]></description>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.02.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 20 Mar 2026 16:19:00 -0400</pubDate>
             <sparkle:version>3</sparkle:version>
             <sparkle:shortVersionString>1.02</sparkle:shortVersionString>
