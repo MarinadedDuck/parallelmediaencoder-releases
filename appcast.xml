@@ -3,6 +3,22 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.124</title>
+            <description><![CDATA[
+<h3>What's New in 1.124</h3>
+<p>Tooltip UI fixes for macOS 14/15 and other UI bug fixes.</p>
+<ul>
+  <li><b>Fixed: Info tooltip popovers on macOS 14/15</b> — Tooltip popovers no longer stretch to extreme height on macOS Sonoma and Sequoia</li>
+  <li><b>Fixed:</b> Other minor UI bug fixes</li>
+</ul>
+            ]]></description>
+            <pubDate>Fri, 03 Apr 2026 15:15:50 -0400</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.124</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.124.zip" length="38564684" type="application/octet-stream" sparkle:edSignature="/2zxvXuQFKYxqNlMSYAMhzbfnHcBGWKFKxIZk9fMhKENLZD0EQSLA95FNKxTUjw9Dgn+4W+TtloL+PredjIqCQ=="/>
+        </item>
+        <item>
             <title>Version 1.123</title>
             <description><![CDATA[
 <h3>What's New in 1.123</h3>
