@@ -1,0 +1,289 @@
+<html>
+<body style="font-family: -apple-system; font-size: 13px; color: #e5e5ea; background: #1c1c1e;">
+
+<h3>What's New in 1.139.16</h3>
+<p>Audio mixdown fix, queue grouping, and console log reliability.</p>
+<ul>
+  <li><b>Fixed: Audio Mixdown</b> — "Mixdown to Stereo" and "Mixdown to Mono" now work correctly on MXF and FFmpeg-demuxed sources. Previously, the setting was accepted in the UI but all source tracks were passed through individually instead of being mixed down to a single output track. MOV/MP4 sources were unaffected</li>
+  <li><b>Improved: Queue Finished Sections</b> — Finished jobs in the queue are now grouped by status: Failed, Cancelled, and Done, each with a labeled section header. Makes it easy to spot problems in large batches instead of scanning a flat chronological list</li>
+  <li><b>Fixed: Console Log Freeze</b> — The in-app console log no longer stops updating after ~5,000 entries. Log export now captures the complete session regardless of length</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.139</h3>
+<p>macOS Tahoe crash fix, interlaced H.264 MXF support, and experimental segment-parallel encoding.</p>
+<ul>
+  <li><b>Fixed: macOS Tahoe Crash</b> — Fixed a hard crash on macOS 26 (Tahoe) caused by a tightened validation in AVAssetWriterInput that throws an Objective-C exception Swift cannot catch. All 20 writer-input creation sites are now wrapped in a safe ObjC bridge that converts the exception into a recoverable error. No behavioral change on macOS 15 and earlier</li>
+  <li><b>Fixed: Interlaced H.264 MXF</b> — Interlaced H.264 High 4:2:2 Intra content in MXF containers (e.g. AVC-Intra Class 100 1080i) no longer fails with a decode error. VideoToolbox's hardware H.264 decoder cannot handle interlaced 4:2:2 — PME now detects the interlaced flag in the H.264 SPS and automatically falls back to software decoding. Preview scrubbing and thumbnails also use the correct path</li>
+  <li><b>New: Experimental Segment-Parallel Encoding</b> — A single source file can now be split into multiple concurrent encoders and re-muxed into one output, dramatically reducing wall-clock time on multi-engine Apple Silicon machines. Supports MXF and AVFoundation sources (.mov/.mp4/.m4v) including ProRes RAW, with full audio output (PCM, AAC, ALAC). Enable in Settings → Encoding. Queue status shows segment count and muxing progress in real time</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.138</h3>
+<p>Queue transparency, tunable HEVC 4:2:2 concurrency, Strict 4:2:2 mode, queue multi-select with batch actions, and queue completion notifications.</p>
+<ul>
+  <li><b>Improved: Live Engine Status</b> — The queue now shows exactly what the engine is doing before encoding starts, replacing the old generic "Waiting for system to allocate resources" message. You'll see concrete status like "Waiting for HEVC 4:2:2 slot (3/3 active)", "Creating VT session", or "Parsing MXF index" — 19 distinct phases in total. Status updates live while waiting so you always know where things stand</li>
+  <li><b>New: Tunable HEVC 4:2:2 Session Cap</b> — The HEVC Main10 4:2:2 concurrency limit is now adjustable in Settings → Override → Encoding. Previously a hidden fixed value. Per-chip defaults: Base 2, Pro 3, Max 4, Ultra 6. Raising above Auto is possible but typically reduces overall throughput on Base/Pro chips. Jobs that exceed the cap now wait visibly in the queue instead of stalling silently inside the encoder</li>
+  <li><b>New: Strict 4:2:2 Mode</b> — New toggle in Override Settings. By default, 4:2:0 sources queued with an HEVC 4:2:2 profile are silently encoded as HEVC Main10 when 4:2:2 slots are full — no data loss since the source has no 4:2:2 chroma to preserve. Enable Strict mode to force every 4:2:2-profile job to wait for a real 4:2:2 slot, useful when consistent output format across a batch matters more than throughput</li>
+  <li><b>New: Queue Multi-Select</b> — Cmd+click to toggle individual jobs, Shift+click for contiguous range selection. Works across all job states. Right-click a multi-selection for batch actions: Reset Status, Remove from Queue, and Send Back to Sources — each showing the applicable count. The settings panel shows a summary view with state breakdown and action buttons when multiple jobs are selected</li>
+  <li><b>New: Queue Completion Notification</b> — Optional macOS notification when the queue finishes. Shows file count and elapsed time (e.g. "8 files encoded in 12:45"). Adapts for mixed results and suppresses on manual cancellation. Enable in Settings → General → Queue</li>
+  <li><b>Fixed: Scrub Playhead Regression</b> — Fixed an issue where the video preview playhead would jump backwards repeatedly during drag scrubbing on certain formats. The playhead now stays at the drag position during scrubbing</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.137</h3>
+<p>Finalize timeout fix for large encodes, All Intra safety gate, high contrast mode, default output folder, and metadata privacy control.</p>
+<ul>
+  <li><b>Fixed: Long encodes failing at the end</b> — Encodes that completed all frames but timed out during the final file-writing step (moov atom) now succeed. Affected large or high-bitrate outputs (e.g. 50-minute 4K HEVC, high-bitrate ProRes RAW). The timeout now scales with file size up to 20 minutes</li>
+  <li><b>New: All Intra HEVC Safety Gate</b> — All Intra encoding (keyframe = 1) is now behind a dedicated toggle in Settings → Override, OFF by default. Prevents accidental use of a mode that can destabilize the hardware encoder under high parallelism. Custom presets that specify All Intra are still honored. The toggle is available to all tiers</li>
+  <li><b>New: High Contrast Mode</b> — New toggle in Settings → General → Appearance. Boosts section headers, labels, and status bar text to meet WCAG AA contrast. Console switches to light background with dark text. No restart required</li>
+  <li><b>New: Default Output Folder</b> — Set a default output path in Settings → General → Output. When configured, imported media automatically uses this folder instead of the source file's directory. Clear it to return to the previous per-source behavior</li>
+  <li><b>New: Optional "Transcoded by" Metadata</b> — The Transcoded by field in Settings → General can now be cleared. When blank, the metadata key is omitted entirely from output files. Previously, clearing the field would silently revert to your macOS username on next launch</li>
+  <li><b>Improved: Log Diagnostics</b> — Mux/finalize step now shows wall-clock timing per file. Progress lines include the source filename so concurrent encodes are distinguishable</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.136</h3>
+<p>Batch encoding parity, smarter HEVC concurrency gating, and queue timing.</p>
+<ul>
+  <li><b>Improved: Batch Encoding Settings</b> — Multi-select mode now has full parity with single-select. The section is renamed from "Quality" to "Encoding" and the separate "Advanced" section is merged in. Added ProRes Alpha checkbox, DNx MXF Output toggle, GIF Loop Count field, and feature-lock badges on the profile picker. "All Intra" and "2 frames" keyframe options now available in batch mode</li>
+  <li><b>Improved: HEVC Session Gating</b> — The single "low-keyframe HEVC" limit (≤12 frames) is replaced with two targeted gates: All Intra (keyframe = 1) and 2-Frame Keyframe (keyframe = 2). Jobs with keyframe intervals of 3 or more are no longer throttled. Each gate has independent tier-based defaults and override limits</li>
+  <li><b>Changed: Edit-Friendly Presets</b> — Both Edit-Friendly H.265 presets now use a 2-frame keyframe interval instead of All Intra, allowing higher default parallelism on Pro and Max chips, less chance of kernel panics with no real world performance difference in the created files for NLE use</li>
+  <li><b>New: Queue Elapsed Time</b> — The log now shows total wall-clock time when the queue finishes (e.g. "Queue finished in 2:35")</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.135</h3>
+<p>Custom preset recovery, HEVC queue stability fixes, and improved concurrency controls.</p>
+<ul>
+  <li><b>Fixed: Custom Presets Restored</b> — Users who lost custom presets after app updates will see them automatically recovered on launch. Old .PME files were never deleted — they just couldn't be read after newer settings fields were added. All presets are now restored with their original names and folder assignments intact</li>
+  <li><b>Fixed: HEVC Queue Stalls</b> — Queues with many Edit Friendly or low-keyframe HEVC encodes could stall mid-encode, appear frozen in the UI, and crash on quit. The hardware encoder occasionally drops in-flight frames after heavy session churn. Encodes now fail cleanly within 60 seconds instead of hanging indefinitely, and the app no longer crashes on quit during a stall</li>
+  <li><b>Improved: Low Keyframe HEVC Session Cap</b> — Concurrent low-keyframe HEVC encodes (keyframe interval 12 or fewer, including Edit Friendly presets) are now capped at 2 by default on all machines. This prevents hardware encoder lockups caused by too many demanding sessions running simultaneously. Pro and Max users can increase the limit in Settings > Override (Pro: up to 3, Max: up to 6)</li>
+  <li><b>Improved: Preset Import Errors</b> — Importing a corrupt or incompatible .PME file now shows an alert with the error message instead of silently failing</li>
+  <li><b>Improved: Queue Diagnostics</b> — Override settings are logged at queue start for easier troubleshooting. Job cancellations now appear in the session log with the source filename</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.133</h3>
+<p>Queue reordering, parallel HEVC stability, and critical bug fixes for GIF scaling, rotation deadlocks, and preset persistence.</p>
+<ul>
+  <li><b>New: Queue Reordering</b> — Drag and drop waiting jobs in the encode queue to change their order. A blue accent line shows the insertion point. Right-click for Move to Top / Move Up / Move Down / Move to Bottom shortcuts. Encoding and completed jobs are unaffected</li>
+  <li><b>Improved: Parallel HEVC Stability</b> — Aggressive HEVC jobs (low keyframe interval, including Edit Friendly presets) are now gated so they don't all enter hardware encode at once. Jobs that can't safely start show "Waiting for system to allocate resources" instead of sitting at 0%</li>
+  <li><b>Improved: Finalize/Mux Reliability</b> — Long-form clips (e.g. interviews) get more headroom during the finalize step, with a frame-scaled timeout up to 10 minutes. Previously stuck jobs now complete cleanly. Timeout failures report as Failed (system issue) instead of Cancelled</li>
+  <li><b>Fixed: GIF outputs not scaling</b> — GIF encodes now correctly respect the output resolution. Previously, a 1280x720 source encoded to GIF at 320x180 would produce a full-resolution file instead of the expected smaller output</li>
+  <li><b>Fixed: Rotated encodes deadlock</b> — Applying rotation to H.264/HEVC encodes no longer causes the pipeline to hang at 0%. The encoder flight limit now accounts for B-frame reordering when rotation is active</li>
+  <li><b>Fixed: R3D + rotation crash</b> — Two concurrent R3D encodes with rotation no longer crash. Rotated R3D jobs now run exclusively to prevent resource conflicts</li>
+  <li><b>Fixed: Presets cleared on import</b> — Applied presets are no longer silently stripped when the batch settings panel appears after importing multiple files</li>
+  <li><b>Fixed: About panel</b> — Release notes link now opens correctly</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.132</h3>
+<p>Frame-accurate encoding: constant frame rate enforcement, MOV edit list compliance, timecode correction, and high-resolution memory management.</p>
+<ul>
+  <li><b>New: Force Fixed Frame Rate (Default ON)</b> — Generates mathematically perfect timing from the source frame rate instead of passing through sample buffer timing. Eliminates VFR flags in MediaInfo/ffprobe on camera-originating footage and ensures frame-for-frame NLE alignment in Resolve, Premiere, and Final Cut Pro. Uses exact source timescale (e.g. 1001/30000) for zero-rounding frame durations. Supported across all pipelines — AVFoundation, MXF, MKV, BRAW, R3D, and Insta360. Available in single-job, batch, and presets</li>
+  <li><b>New: Include Pre/Post-Roll Frames Toggle</b> — Some cameras (e.g. Atomos Shogun Ultra) record extra frames outside the MOV edit list that are invisible in NLEs. Default OFF trims to match your NLE's frame count; toggle ON to include all raw media samples. Available in single-job and batch settings</li>
+  <li><b>New: Timecode Edit List Correction</b> — Timecode now accounts for the edit list offset on the timecode track. Fixes starting timecode being minutes off on clips with long pre-roll recordings (e.g. Atomos continuous-record). Output timecode now matches Resolve's reported starting timecode</li>
+  <li><b>Improved: ProRes RAW Flat Colour Profile</b> — Refined the Flat colour pipeline for better match to the FLAT reference, with corrections for skin warmth bias, cyan/teal background cast, and overall saturation/gain trim. Tuned against both log-domain and LUT-applied grading views</li>
+  <li><b>Improved: CLI Codec Resolution Validation</b> — <code>pme transcode</code> now validates output resolution against codec hardware limits before encoding starts. H.264 jobs exceeding 4096x2160 are rejected immediately with a clear message instead of failing mid-encode</li>
+  <li><b>Improved: High-Resolution Memory Management</b> — Reduced peak memory for concurrent encodes of 5K+ sources. Capped output queue depth and reduced in-flight decoded frames for sources above 4K, saving ~600 MB per concurrent job</li>
+  <li><b>Fixed: GIF encoding fails</b> — GIF exports no longer fail with "Failed to finalize GIF file" due to floating-point frame count mismatch</li>
+  <li><b>Fixed: Variable frame rate output</b> — Source timing micro-jitter on camera footage no longer propagates to encodes</li>
+  <li><b>Fixed: Frame count mismatch</b> — Pre-roll and post-roll frames outside the MOV edit list no longer leak into output, matching NLE frame counts</li>
+  <li><b>Fixed: Timecode offset on Atomos clips</b> — Starting timecode on Atomos Shogun clips no longer reports minutes earlier than NLEs display</li>
+  <li><b>Fixed: Container timescale rounding</b> — Output timescale now matches the source (e.g. 30000 for 29.97fps) instead of defaulting to 600, preventing frame duration rounding errors</li>
+  <li><b>Fixed: BRAW/R3D frame duration rounding</b> — 29.97fps and 23.976fps sources no longer round to 30/24 in the output</li>
+  <li><b>Fixed: MKV timing jitter</b> — MKV pipeline now synthesises clean frame timing when force fixed frame rate is on</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.131</h3>
+<p>Edit-friendly H.265 presets, codec hardware limit lockouts, expanded keyframe controls, and ProRes RAW preview improvements.</p>
+<ul>
+  <li><b>New: Edit-Friendly H.265 Presets</b> — Two new Video Editing presets that produce HEVC files with all-intra encoding for instant scrubbing in Final Cut Pro and Premiere Pro. 10-bit (Main10 4:2:2, 150 Mbps) and 8-bit (Main, 100 Mbps) variants, both with PCM 24-bit audio passthrough</li>
+  <li><b>New: All Intra Keyframe Option</b> — Every frame is an I-frame for maximum seek performance. Also added 2-frame GOP matching Atomos Shogun's I-P pattern</li>
+  <li><b>New: Codec Hardware Limit Validation</b> — The app now prevents queuing jobs that exceed your hardware encoder's limits. H.264 is validated at 4096x2160 @ 60fps, HEVC at 8192x4320 @ 120fps, and ProRes at 8192x4320 @ 120fps. Orange warnings appear when source resolution or frame rate exceeds the selected codec's maximum, and the Add to Queue button is disabled until the issue is resolved</li>
+  <li><b>Improved: ProRes RAW Preview</b> — Faster scrubbing with cached preview sessions, hybrid seek (fast approximate drag, exact frame on release), 1080p preview cap for smoother playback, and instant Flat/Rec.709 mode switching</li>
+  <li><b>Fixed: ProRes RAW Rec.709 Colour</b> — Preview and export now use the same colour pipeline. The Rec.709 LUT is locked to the correct transform and bundled in the app, preventing silent look drift</li>
+  <li><b>Improved: Resize Preview Thumbnails</b> — Rotation and Stretch/Fit/Crop preview thumbnails are now capped so they don't grow excessively large when switching between landscape and portrait orientations</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.13</h3>
+<p>ProRes RAW colour profiles, native ProRes-in-MXF decode, major queue and preset UI improvements, and critical bug fixes for watermark/trim export, DNxHD output, and queue selection.</p>
+<ul>
+  <li><b>New: ProRes RAW Colour Profiles</b> — ProRes RAW sources now support Flat and Rec.709 colour profiles with a redesigned colour pipeline</li>
+  <li><b>New: ProRes-in-MXF Decode</b> — Natively decode Apple ProRes (422 / 422 HQ / 4444 / 4444 XQ) inside MXF containers via VideoToolbox. Preview, scrub, and transcode to all output codecs (HEVC, H.264, ProRes, DNxHR, DNxHD) with full audio passthrough. No extra plugins or SDKs required</li>
+  <li><b>New: DNxHD CLI Codec Mappings</b> — <code>pme transcode --codec dnxhd-lb/sq/hq/hqx/444</code> now available alongside the existing DNxHR variants</li>
+  <li><b>New: Job Status Banners</b> — The settings panel shows a live-updating banner for queued, encoding, and completed jobs. Completed jobs have a clickable banner that opens the output file in Finder</li>
+  <li><b>New: Reset Status</b> — Right-click completed, failed, or cancelled jobs in the queue to re-run them</li>
+  <li><b>New: Encoder Stats in Queue</b> — Optional "Show encoder FPS and realtime rate" toggle in Settings displays live encoding speed on running jobs</li>
+  <li><b>New: Preset Detail View</b> — Expand any preset with the chevron icon to see all saved settings at a glance</li>
+  <li><b>Improved: "Applied" Preset Feedback</b> — The Apply Preset button shows "Applied" when the selected preset matches the current job settings, and reverts when you make changes</li>
+  <li><b>Improved: Reactive Settings Editability</b> — Settings lock and unlock in real time as jobs transition between queued, encoding, and completed states</li>
+  <li><b>Fixed: Watermark Export Regression</b> — Watermarks now appear in encoded output when "Keep sources in staging" is enabled. Previously, watermark settings were lost when jobs entered the queue. Trim ranges, GIF loop count, and several other settings were also affected and are now fixed</li>
+  <li><b>Fixed: DNxHD Output</b> — DNxHD codec variants now correctly produce DNxHD streams instead of silently falling back to DNxHR</li>
+  <li><b>Fixed: Queue Selection Highlight</b> — Row highlights in the queue panel no longer freeze after encoding finishes</li>
+  <li><b>Fixed: Preset Tag on No-Audio Sources</b> — Preset names no longer disappear on import for sources without audio tracks</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.125</h3>
+<p>Better update error handling with clearer warnings and instructions for fixing permission problems.</p>
+<ul>
+  <li><b>Improved: Update error handling</b> — The updater now shows clearer warnings when updates fail, with specific instructions on how to fix permission problems</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.124</h3>
+<p>Tooltip UI fixes for macOS 14/15 and other UI bug fixes.</p>
+<ul>
+  <li><b>Fixed: Info tooltip popovers on macOS 14/15</b> — Tooltip popovers no longer stretch to extreme height on macOS Sonoma and Sequoia</li>
+  <li><b>Fixed:</b> Other minor UI bug fixes</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.123</h3>
+<p>Audio settings cleanup, smarter Automatic mode, file size estimation for all codecs, HDR overlay fixes, and a clearer update permission flow.</p>
+<ul>
+  <li><b>New: Simplified Audio Settings</b> — Single source of truth for track handling with clearer labels: Keep All Tracks, Mixdown to Mono, Mixdown to Stereo</li>
+  <li><b>New: Automatic Mode Reset</b> — Reset button beside Automatic re-evaluates audio and codec defaults from current source metadata</li>
+  <li><b>New: Automatic Codec Defaults</b> — HEVC auto-selects Main/Main10 based on source bit depth; H.264 auto-selects High profile</li>
+  <li><b>New: File Size Estimation for All Codecs</b> — The estimation table now appears for ProRes, DNxHR, DNxHD, and GIF — not just H.264/HEVC. Uses Apple-published ProRes data rates and matched DNx rates scaled by resolution and frame rate</li>
+  <li><b>New: Update Permission Screenshot</b> — The App Management permission alert now includes a screenshot showing exactly which toggle to enable</li>
+  <li><b>Improved: No-Audio Handling</b> — Sources without audio auto-select No Audio. Batch settings skip no-audio clips. No Audio added as explicit batch option</li>
+  <li><b>Improved: Batch Audio</b> — Batch audio changes apply to all selected clips and pending probes</li>
+  <li><b>Improved: Automatic Audio</b> — Compares pass-through vs re-encode size and picks the smaller output</li>
+  <li><b>Fixed: HDR pass-through on rotated clips</b> — HDR sources (e.g. BT.2020 HLG from iPhone) no longer appear burnt/orange after rotation or scaling</li>
+  <li><b>Fixed: HDR with overlays</b> — Timecode/watermark overlays no longer break HDR pass-through</li>
+  <li><b>Fixed: Overlay preview accuracy</b> — Timecode and watermark placement in preview now matches final output across vertical and 16:9 sources</li>
+  <li><b>Fixed: Timecode size slider</b> — Low-end values are no longer a dead zone</li>
+  <li><b>Fixed:</b> Conflicting audio options, preset-on-import no-audio edge case, Automatic timing stability</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.12</h3>
+<p>Camera RAW decode controls, LucidLink presets, 10-bit SDR encoding fixes, and encoding settings improvements.</p>
+<ul>
+  <li><b>New: Camera RAW Controls (R3D + BRAW)</b> — Floating always-on-top window for overriding RAW decode settings. Switch between "As Shot" (camera metadata) and "Custom" to adjust color science, color space, gamma, ISO, white balance, and exposure with real-time preview updates</li>
+  <li><b>New: RED R3D Controls</b> — Color science (Legacy/IPP2), color space (REDWideGamutRGB, Rec.709, Rec.2020, DCI-P3, and more), gamma curve (Log3G10, Log3G12, REDlogFilm, BT.1886, HLG, and more), ISO, and drag-to-scrub exposure control</li>
+  <li><b>New: Blackmagic RAW Controls</b> — Color space (BMD, Rec.709, Rec.2020, DCI-P3), gamma (BMD Film/Video/Extended Video, Rec.709), white balance, ISO, and exposure</li>
+  <li><b>New: LucidLink Presets</b> — Three presets for LucidLink cloud workflows: Normal (HEVC Main10, 21 Mbps), Proxy (HEVC Main, 14 Mbps, half res), High (HEVC Main10 4:2:2, 26 Mbps)</li>
+  <li><b>New: Encoding Profile Warnings</b> — Yellow warnings when selecting Main10 or 4:2:2 profiles on sources that don't benefit from them</li>
+  <li><b>New: Info Tooltips</b> — Hover info icons on Automatic quality, Profile, Keyframe Interval, and Scaled resolution settings</li>
+  <li><b>Fixed: 10-bit SDR encoding</b> — Sources like Canon XF-HEVC (10-bit 4:2:2) are no longer downgraded to 8-bit. Correct color metadata tags (bt709) now written on all HEVC/H.264 outputs</li>
+  <li><b>Fixed: hvcC bit depth parsing</b> — HEVC Rext sources now correctly report bit depth and chroma format in metadata</li>
+  <li><b>Improved: Automatic bitrate</b> — HEVC targets 50% of source bitrate (was 70%), H.264 targets 65%</li>
+  <li><b>Improved: H.264 Baseline</b> — B-Frames toggle grayed out when Baseline profile is selected</li>
+  <li><b>Improved: Update permission check</b> — Proactively warns if macOS App Management permission may block updates</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.11</h3>
+<p>In/out point trimming, GIF export, watermark overlays, frame-accurate navigation, file size estimation, and updater error diagnostics.</p>
+<ul>
+  <li><b>New: In/Out Point Trimming (Pro)</b> — Mark sub-ranges with draggable handles, keyboard shortcuts (I/O/X), and timecode input. Works across all pipelines. CLI: <code>--in</code> / <code>--out</code></li>
+  <li><b>New: Watermark Overlay (Pro)</b> — Burn a transparent PNG watermark with scale, opacity, and drag-to-position. Live preview shows exact output placement</li>
+  <li><b>New: GIF Export</b> — Animated GIF output with configurable frame rate and loop count. <code>--codec gif</code> on CLI</li>
+  <li><b>New: Frame-Accurate Navigation</b> — Left/right arrow keys nudge the playhead by exactly one frame</li>
+  <li><b>New: File Size Estimation</b> — Redesigned Automatic quality mode targets 70% of source bitrate. New estimation table shows Source vs. Output with size comparison</li>
+  <li><b>New: No Audio Option</b> — Strip all audio tracks from the output</li>
+  <li><b>New: Sources Size Column</b> — Optional file size column in the Sources panel, sortable by size</li>
+  <li><b>New: Preset Search</b> — Search bar in the Presets panel to filter by name</li>
+  <li><b>Improved: Update Error Details</b> — When an auto-update fails, a follow-up alert now shows the specific reason (bad archive, signature failure, permission denied, etc.)</li>
+  <li><b>Improved: About Window</b> — Credits now shown in the About panel</li>
+  <li><b>Fixed:</b> Overlay positioning and clipping on non-16:9 and rotated sources</li>
+  <li><b>Fixed:</b> Backspace no longer removes sources when a text field is focused</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.10</h3>
+<p>Watch folder hardening — network share credentials, smart error handling, drag-and-drop folder setup, configurable PickedUp destinations, and full scan logging.</p>
+<ul>
+  <li><b>New: Network Share Credentials (Pro)</b> — Store username and password per watch folder for automatic remounting when SMB/NFS/AFP shares disconnect. Passwords stored securely in macOS Keychain</li>
+  <li><b>New: Auto-Remount</b> — PME detects disconnected network shares and automatically attempts to remount using stored credentials. Manual "Mount" button available in the watch folder row</li>
+  <li><b>New: Watch Folder Validation</b> — Output folder cannot be inside the watch folder (prevents infinite loops). Watch folders cannot overlap as parent/child of each other</li>
+  <li><b>New: Custom PickedUp Destinations</b> — Move detected files to any folder on the same volume instead of the default PickedUp subfolder. Configurable PickedUp folder name in Settings</li>
+  <li><b>New: Drag &amp; Drop Folder Setup</b> — Drag folders from Finder directly onto the Watch Folder, Output, and PickedUp fields in the settings sheet</li>
+  <li><b>New: Watch Folder Scan Logging</b> — Full scan activity logged to the console window with file counts, stability checks, move operations, and error diagnosis</li>
+  <li><b>New: Expanded Insta360 Metadata</b> — Improved metadata extraction for Insta360 .insv footage</li>
+  <li><b>Improved: Structured Error Handling</b> — Watch folder errors now distinguish between folder deleted, volume unmounted, network disconnected, and permission denied</li>
+  <li><b>Improved: Clickable Folder Pills</b> — Watch, Output, and Moved-to folder names shown as colored pills that open the folder in Finder</li>
+  <li><b>Improved: CLI</b> — New <code>--picked-up-path</code>, <code>--network-user</code>, <code>--network-password</code> flags for <code>pme watch add</code></li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.09</h3>
+<p>Watch folders for automatic transcoding — drop media into a folder and PME picks it up, applies a preset, and transcodes to your output location in the background.</p>
+<ul>
+  <li><b>New: Watch Folders (Pro)</b> — Configure folders to monitor for new media. PME polls at a configurable interval (1-60 min), moves files to a PickedUp subfolder, and auto-queues them with your chosen preset and output location</li>
+  <li><b>New: Watch Folders Window</b> — Dedicated management window with add/edit/remove, start/stop per folder, Scan Now button, and picked-up file counter</li>
+  <li><b>New: CLI Watch Commands (Pro)</b> — <code>pme watch add/list/start/stop/remove</code> for terminal-based watch folder management. Shared config with the GUI</li>
+  <li><b>New: Network Folder Support</b> — Watch folders work with SMB, NFS, and AFP mounted volumes via polling</li>
+  <li><b>New: Delete Key Source Removal</b> — Select sources and press Delete/Backspace to remove them</li>
+  <li><b>New: Undo/Redo</b> — Cmd+Z to undo removed sources, Cmd+Shift+Z to redo. Works for single, multi-select, and "Remove Unsupported"</li>
+  <li><b>Improved: Queue Integration</b> — Watch folder jobs share the main queue with a green "Watch Folder" badge. Status bar shows active watch folder count</li>
+  <li><b>Improved: Shutdown Guard</b> — Warning dialog when quitting with active watch folders or encodes</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.07</h3>
+<p>Full vertical video support with rotation controls, a built-in metadata viewer, and resize modes (Stretch, Fit, Crop) for custom resolutions.</p>
+<ul>
+  <li><b>New: Video Rotation</b> — Rotate clips 90 CW/CCW with preview thumbnails. Works across all formats (MOV, MXF, BRAW, R3D, MKV). Batch rotation, CLI <code>--rotate</code> flag, and preset support included</li>
+  <li><b>New: Resize Modes</b> — Choose Stretch, Fit (letterbox), or Crop when using custom resolutions with mismatched aspect ratios. Visual side-by-side previews show each mode's effect</li>
+  <li><b>New: Override Settings</b> — Control parallel encode limits, GPU decode slots, and rotation memory limits from a new Settings tab</li>
+  <li><b>New: Session-Sticky Output Folder</b> — Picking an output folder now applies it to all unconfigured clips and future imports for the session</li>
+  <li><b>New: Vertical/Portrait Video</b> — Full orientation support for iPhone and portrait-shot video with correct dimension handling</li>
+  <li><b>New: Batch Custom Resolution</b> — Apply arbitrary custom resolutions with resize modes in batch mode</li>
+  <li><b>New: Keep Aspect Ratio Toggle</b> — Shows the source ratio (16:9, 9:16, 17:9, etc.) and snaps to AR-preserving values</li>
+  <li><b>Improved: PME Metadata</b> — All output files carry encode parameters; inspector shows a dedicated PME metadata section</li>
+  <li><b>Improved: Memory Management</b> — Rotation encodes use backpressure, reduced concurrency, and GPU resource reclamation to stay within system RAM</li>
+  <li><b>Fixed:</b> Multiple rotation pipeline bugs (squished BRAW/R3D, missing transforms in DNx path, operator precedence)</li>
+  <li><b>Fixed:</b> Portrait video orientation, resize mode persistence, batch settings sync</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.06</h3>
+<ul>
+  <li><b>New: Command-Line Interface (Pro)</b> — <code>pme</code> CLI tool for headless transcoding, file probing, preset management, and license activation. Supports all codecs, presets, LUTs, and overlays. JSON output mode for scripting and automation</li>
+  <li><b>New: Service Mode (Pro)</b> — run PME as a background daemon with a local REST API. Submit jobs, monitor progress, and control the queue over HTTP</li>
+  <li><b>New: AppleScript Support</b> — automate transcoding with <code>transcode</code>, <code>probe</code>, and <code>list presets</code> commands</li>
+  <li><b>New: Shortcuts / App Intents</b> — three Shortcuts actions (Transcode, Probe, List Presets) with Siri phrase support</li>
+  <li><b>New: Install CLI Tool</b> — menu item creates a <code>/usr/local/bin/pme</code> symlink for terminal access</li>
+  <li><b>Improved:</b> License activation now shows a thank-you message and displays the registered name and email from your Gumroad purchase</li>
+</ul>
+
+<hr>
+
+<h3>What's New in 1.05</h3>
+<ul>
+  <li><b>New:</b> Conflict resolution sheet with editable filenames and real-time validation</li>
+  <li><b>New:</b> Smart numeric suffixes for output collisions</li>
+  <li><b>New:</b> Queue shows output filename instead of source filename</li>
+  <li><b>New:</b> Overwrite existing output files with Replace/Rename/Go Back options</li>
+  <li><b>Fixed:</b> Overlay and LUT settings lost when "Keep sources in staging" was enabled</li>
+  <li><b>Fixed:</b> Burn-in timecode drift and mismatch fixes</li>
+  <li><b>Fixed:</b> AAC audio encoding failure with 32-bit bit depth</li>
+</ul>
+
+</body>
+</html>
