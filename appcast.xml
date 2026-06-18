@@ -9,7 +9,7 @@
             <sparkle:version>44</sparkle:version>
             <sparkle:shortVersionString>1.145.00</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.145.00.zip" length="62714822" type="application/octet-stream" sparkle:edSignature="rH9QWFd9mj54Blf015/BjmG3+/7wTpAm5L5OzezZCymM021FghFNqeAukhDOsEJCZqbP1CierGNnWwMC0p0BBA=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.145.00.zip" length="62714822" type="application/octet-stream" sparkle:edSignature="rH9QWFd9mj54Blf015/BjmG3+/7wTpAm5L5OzezZCymM021FghFNqeAukhDOsEJCZqbP1CierGNnWwMC0p0BBA=="/>
         </item>
         <item>
             <title>Version 1.140.05</title>
@@ -18,7 +18,7 @@
             <sparkle:version>41</sparkle:version>
             <sparkle:shortVersionString>1.140.05</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.140.05.zip" length="56574313" type="application/octet-stream" sparkle:edSignature="K/Kb1VlY6l2TxdmoJnqh3hwX7JeZ9x4FojOAl84Tzuf2i8Or4Swasr9axv3IwkxQt6t4cATEjO+fPPtRfyEKBQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.140.05.zip" length="56574313" type="application/octet-stream" sparkle:edSignature="K/Kb1VlY6l2TxdmoJnqh3hwX7JeZ9x4FojOAl84Tzuf2i8Or4Swasr9axv3IwkxQt6t4cATEjO+fPPtRfyEKBQ=="/>
         </item>
         <item>
             <title>Version 1.140.04</title>
@@ -27,7 +27,7 @@
             <sparkle:version>40</sparkle:version>
             <sparkle:shortVersionString>1.140.04</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.140.04.zip" length="56557712" type="application/octet-stream" sparkle:edSignature="F2CUbGmdgkTygPORo2ldZGBPmWex/TC395IdrfB+dorvMtvZSGs4U4f1eUynEYSWN4Fg6NYP0GRgyhNQdGmYBg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.140.04.zip" length="56557712" type="application/octet-stream" sparkle:edSignature="F2CUbGmdgkTygPORo2ldZGBPmWex/TC395IdrfB+dorvMtvZSGs4U4f1eUynEYSWN4Fg6NYP0GRgyhNQdGmYBg=="/>
         </item>
         <item>
             <title>Version 1.140.03</title>
@@ -36,7 +36,7 @@
             <sparkle:version>39</sparkle:version>
             <sparkle:shortVersionString>1.140.03</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.140.03.zip" length="56577808" type="application/octet-stream" sparkle:edSignature="OXYIY24vS44dViC+PjABQipSFm7d/3mEBwIpC1CQDwPvrDE1Q+UZWw3akBuWUCgzexiVIQu8CSy/4VWEjudUBw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.140.03.zip" length="56577808" type="application/octet-stream" sparkle:edSignature="OXYIY24vS44dViC+PjABQipSFm7d/3mEBwIpC1CQDwPvrDE1Q+UZWw3akBuWUCgzexiVIQu8CSy/4VWEjudUBw=="/>
         </item>
         <item>
             <title>Version 1.140.02</title>
@@ -45,7 +45,7 @@
             <sparkle:version>38</sparkle:version>
             <sparkle:shortVersionString>1.140.02</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.140.02.zip" length="56492613" type="application/octet-stream" sparkle:edSignature="LX/fQuP8FSiY0zp4pAFiFzbDrjRo5gNc7RvIRT8n4xB8D0QmRUYdQJjt0HjLHqkwxWwt8PCqym/UCosds4v5Ag=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.140.02.zip" length="56492613" type="application/octet-stream" sparkle:edSignature="LX/fQuP8FSiY0zp4pAFiFzbDrjRo5gNc7RvIRT8n4xB8D0QmRUYdQJjt0HjLHqkwxWwt8PCqym/UCosds4v5Ag=="/>
         </item>
         <item>
             <title>Version 1.140.01</title>
@@ -54,7 +54,7 @@
             <sparkle:version>37</sparkle:version>
             <sparkle:shortVersionString>1.140.01</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.140.01.zip" length="56493917" type="application/octet-stream" sparkle:edSignature="SXXS+6KtbLEE0XQbplQbHzJG89Vps8IvsGf8yRJ+WjaqsM7MBKNH37qN484vVfNZOTXK7ENQosH34PaZ6jL1Bg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.140.01.zip" length="56493917" type="application/octet-stream" sparkle:edSignature="SXXS+6KtbLEE0XQbplQbHzJG89Vps8IvsGf8yRJ+WjaqsM7MBKNH37qN484vVfNZOTXK7ENQosH34PaZ6jL1Bg=="/>
         </item>
         <item>
             <title>Version 1.140.00</title>
@@ -63,7 +63,7 @@
             <sparkle:version>36</sparkle:version>
             <sparkle:shortVersionString>1.140.00</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.140.00.zip" length="56482159" type="application/octet-stream" sparkle:edSignature="waggI7xDRH9IyDJvqOzMSA+qhZCsVXxDvIBvl4NR6R4qCzgIUOPT8lWn7756zfBcwJKDxb/4luOnF77edjYMCw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.140.00.zip" length="56482159" type="application/octet-stream" sparkle:edSignature="waggI7xDRH9IyDJvqOzMSA+qhZCsVXxDvIBvl4NR6R4qCzgIUOPT8lWn7756zfBcwJKDxb/4luOnF77edjYMCw=="/>
         </item>
         <item>
             <title>Version 1.139.21</title>
@@ -72,7 +72,7 @@
             <sparkle:version>35</sparkle:version>
             <sparkle:shortVersionString>1.139.21</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.21.zip" length="40181947" type="application/octet-stream" sparkle:edSignature="keWjb14h2aTPd8CZjyk6Xhc+286HDngehHsbL/j1URQmptkj+gL8sHElLeEZ2ioAfqb+01KH0Anwda7y0xV5CQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.21.zip" length="40181947" type="application/octet-stream" sparkle:edSignature="keWjb14h2aTPd8CZjyk6Xhc+286HDngehHsbL/j1URQmptkj+gL8sHElLeEZ2ioAfqb+01KH0Anwda7y0xV5CQ=="/>
         </item>
         <item>
             <title>Version 1.139.20</title>
@@ -81,7 +81,7 @@
             <sparkle:version>34</sparkle:version>
             <sparkle:shortVersionString>1.139.20</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.20.zip" length="40134876" type="application/octet-stream" sparkle:edSignature="fVqMxnM+vaZ5H1r1DhOq4TBobbn6S0oNjzHgAtnzYGh0g0Ww+czXq0f6R0odDVm0bv+6qBDzG2bToiGkmPIuCw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.20.zip" length="40134876" type="application/octet-stream" sparkle:edSignature="fVqMxnM+vaZ5H1r1DhOq4TBobbn6S0oNjzHgAtnzYGh0g0Ww+czXq0f6R0odDVm0bv+6qBDzG2bToiGkmPIuCw=="/>
         </item>
         <item>
             <title>Version 1.139.19</title>
@@ -90,7 +90,7 @@
             <sparkle:version>33</sparkle:version>
             <sparkle:shortVersionString>1.139.19</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.19.zip" length="47573799" type="application/octet-stream" sparkle:edSignature="yR+kwEkWJAViYH+KnhbRpSMKkhDXeNrGm7CDIRuR/Vv+Eo7rxlBK10J2exBdjJB9hyytdtg2NxAi6zHvm2h1CQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.19.zip" length="47573799" type="application/octet-stream" sparkle:edSignature="yR+kwEkWJAViYH+KnhbRpSMKkhDXeNrGm7CDIRuR/Vv+Eo7rxlBK10J2exBdjJB9hyytdtg2NxAi6zHvm2h1CQ=="/>
         </item>
         <item>
             <title>Version 1.139.18</title>
@@ -99,7 +99,7 @@
             <sparkle:version>32</sparkle:version>
             <sparkle:shortVersionString>1.139.18</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.18.zip" length="47466451" type="application/octet-stream" sparkle:edSignature="pkP8V+tMpfv+WDWkHgkr3m97+ecisttvBrf1qVdjx2/+9hQAepkSGmEDUMWeMAGc7FM+lSnXnjsS7hYfvKQyAg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.18.zip" length="47466451" type="application/octet-stream" sparkle:edSignature="pkP8V+tMpfv+WDWkHgkr3m97+ecisttvBrf1qVdjx2/+9hQAepkSGmEDUMWeMAGc7FM+lSnXnjsS7hYfvKQyAg=="/>
         </item>
         <item>
             <title>Version 1.139.17</title>
@@ -108,7 +108,7 @@
             <sparkle:version>31</sparkle:version>
             <sparkle:shortVersionString>1.139.17</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.17.zip" length="47465671" type="application/octet-stream" sparkle:edSignature="7qsaKM74arTrXmBh25VCnfHtXPdaZofHR/qlVE03zePtnA3JPDKeaheS49N3WAVvupvdWIHXhg1p/bAz63+1BQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.17.zip" length="47465671" type="application/octet-stream" sparkle:edSignature="7qsaKM74arTrXmBh25VCnfHtXPdaZofHR/qlVE03zePtnA3JPDKeaheS49N3WAVvupvdWIHXhg1p/bAz63+1BQ=="/>
         </item>
         <item>
             <title>Version 1.139.16</title>
@@ -117,7 +117,7 @@
             <sparkle:version>30</sparkle:version>
             <sparkle:shortVersionString>1.139.16</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.16.zip" length="47161803" type="application/octet-stream" sparkle:edSignature="1TqPNc8QXuhiLBoGoW/6YPzbg7MSkz1QK2oVSBXsVwremd8nTT0CuK3BJOa/6XYZNCGBrd7e6gO1fUio/LPVDA=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.16.zip" length="47161803" type="application/octet-stream" sparkle:edSignature="1TqPNc8QXuhiLBoGoW/6YPzbg7MSkz1QK2oVSBXsVwremd8nTT0CuK3BJOa/6XYZNCGBrd7e6gO1fUio/LPVDA=="/>
         </item>
         <item>
             <title>Version 1.139</title>
@@ -126,7 +126,7 @@
             <sparkle:version>29</sparkle:version>
             <sparkle:shortVersionString>1.139.15</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.139.15.zip" length="47155409" type="application/octet-stream" sparkle:edSignature="lvxQ7TCvGt5pI9rzTQIJjtv2/UaiaBKKpqYaPkLnjERiomVQiqX3EUasCVOdzallfHdbkv+xUhVEZcjk8laoAw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.139.15.zip" length="47155409" type="application/octet-stream" sparkle:edSignature="lvxQ7TCvGt5pI9rzTQIJjtv2/UaiaBKKpqYaPkLnjERiomVQiqX3EUasCVOdzallfHdbkv+xUhVEZcjk8laoAw=="/>
         </item>
         <item>
             <title>Version 1.138</title>
@@ -135,7 +135,7 @@
             <sparkle:version>28</sparkle:version>
             <sparkle:shortVersionString>1.138</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.138.zip" length="44226936" type="application/octet-stream" sparkle:edSignature="D8Os3mag8uD+kfo6GNlV6eUT+hE8BFyVD5zGOhGOKDHmdRTapDlmwby0QjzBECrgttde1+pk8R2NfaBHb9m/BQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.138.zip" length="44226936" type="application/octet-stream" sparkle:edSignature="D8Os3mag8uD+kfo6GNlV6eUT+hE8BFyVD5zGOhGOKDHmdRTapDlmwby0QjzBECrgttde1+pk8R2NfaBHb9m/BQ=="/>
         </item>
         <item>
             <title>Version 1.137</title>
@@ -144,7 +144,7 @@
             <sparkle:version>27</sparkle:version>
             <sparkle:shortVersionString>1.137</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.137.zip" length="41822467" type="application/octet-stream" sparkle:edSignature="qKUjboXC272d+g1T5PUL75Zt5VnIDdi1uOFynVKaXPxtXMHDu/8hH5uSpMhJbmj10+5/GTQzghd4DwSlNgnQBA=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.137.zip" length="41822467" type="application/octet-stream" sparkle:edSignature="qKUjboXC272d+g1T5PUL75Zt5VnIDdi1uOFynVKaXPxtXMHDu/8hH5uSpMhJbmj10+5/GTQzghd4DwSlNgnQBA=="/>
         </item>
         <item>
             <title>Version 1.136</title>
@@ -153,7 +153,7 @@
             <sparkle:version>26</sparkle:version>
             <sparkle:shortVersionString>1.136</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.136.zip" length="41741522" type="application/octet-stream" sparkle:edSignature="L1cXF9OMvIuhRNhinel58G6I1TV6Nnt3VTFOz2FVye1tNRUyLAPMXc7jAWI0ORsLbnKewz7OLe2POv/ZRpyJBg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.136.zip" length="41741522" type="application/octet-stream" sparkle:edSignature="L1cXF9OMvIuhRNhinel58G6I1TV6Nnt3VTFOz2FVye1tNRUyLAPMXc7jAWI0ORsLbnKewz7OLe2POv/ZRpyJBg=="/>
         </item>
         <item>
             <title>Version 1.135</title>
@@ -162,7 +162,7 @@
             <sparkle:version>25</sparkle:version>
             <sparkle:shortVersionString>1.135</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.135.zip" length="41657654" type="application/octet-stream" sparkle:edSignature="qobu9f+Y3DkiMfkG195ZFGq5Mtk2biNmRdeNiDA/mhXVg/z3ARtsqX9ysupNVV23+BZT2QfCOt7MD/RL8wupCA=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.135.zip" length="41657654" type="application/octet-stream" sparkle:edSignature="qobu9f+Y3DkiMfkG195ZFGq5Mtk2biNmRdeNiDA/mhXVg/z3ARtsqX9ysupNVV23+BZT2QfCOt7MD/RL8wupCA=="/>
         </item>
         <item>
             <title>Version 1.133</title>
@@ -171,7 +171,7 @@
             <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.133</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.133.zip" length="41376656" type="application/octet-stream" sparkle:edSignature="wuHGsi5aSKTXKPnoSdweakZ2YAFzlIvjedtMhnJmFFTTEupKBvC+09DxeyBXKMRt+R5GXtxlrT7DeCAinNHwAQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.133.zip" length="41376656" type="application/octet-stream" sparkle:edSignature="wuHGsi5aSKTXKPnoSdweakZ2YAFzlIvjedtMhnJmFFTTEupKBvC+09DxeyBXKMRt+R5GXtxlrT7DeCAinNHwAQ=="/>
         </item>
         <item>
             <title>Version 1.132</title>
@@ -180,7 +180,7 @@
             <sparkle:version>20</sparkle:version>
             <sparkle:shortVersionString>1.132</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.132.zip" length="41067605" type="application/octet-stream" sparkle:edSignature="haN6zm7WOxOG6+xD+1ZMr3M+yJQqBkIIEYFaHpew1OhkQx485yHBR0GMLsfBCia6bCUyUlH+hC5w1MpszlraCA=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.132.zip" length="41067605" type="application/octet-stream" sparkle:edSignature="haN6zm7WOxOG6+xD+1ZMr3M+yJQqBkIIEYFaHpew1OhkQx485yHBR0GMLsfBCia6bCUyUlH+hC5w1MpszlraCA=="/>
         </item>
         <item>
             <title>Version 1.131</title>
@@ -189,7 +189,7 @@
             <sparkle:version>19</sparkle:version>
             <sparkle:shortVersionString>1.131</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.131.zip" length="40974418" type="application/octet-stream" sparkle:edSignature="llUamFwz8qPvq4JVtiiyNPB8sjb77JlCdJCBRLzDvUC7sSBn/2mFM1l08qfW5aPcuTHtlSxv5Cr3oqdWCNXGAQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.131.zip" length="40974418" type="application/octet-stream" sparkle:edSignature="llUamFwz8qPvq4JVtiiyNPB8sjb77JlCdJCBRLzDvUC7sSBn/2mFM1l08qfW5aPcuTHtlSxv5Cr3oqdWCNXGAQ=="/>
         </item>
         <item>
             <title>Version 1.13</title>
@@ -198,7 +198,7 @@
             <sparkle:version>18</sparkle:version>
             <sparkle:shortVersionString>1.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.13.zip" length="39370757" type="application/octet-stream" sparkle:edSignature="TKHZIntCztPUVuVbdWEtBhq8FD9MFBLwDg9gMaPZ84MVxWkQ1QE95d6Cji+rI0T+Uj5FYgIUrYfBHEUPp+soBg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.13.zip" length="39370757" type="application/octet-stream" sparkle:edSignature="TKHZIntCztPUVuVbdWEtBhq8FD9MFBLwDg9gMaPZ84MVxWkQ1QE95d6Cji+rI0T+Uj5FYgIUrYfBHEUPp+soBg=="/>
         </item>
         <item>
             <title>Version 1.125</title>
@@ -207,7 +207,7 @@
             <sparkle:version>17</sparkle:version>
             <sparkle:shortVersionString>1.125</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.125.zip" length="38571360" type="application/octet-stream" sparkle:edSignature="C2upfhKHYswD4wIwg8Qg0j9XrJpAI/e17lAKSGfq6isaFrLaufiltWRg8U8yLLCekrKshzm1Q+DJH3cI8ifbDw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.125.zip" length="38571360" type="application/octet-stream" sparkle:edSignature="C2upfhKHYswD4wIwg8Qg0j9XrJpAI/e17lAKSGfq6isaFrLaufiltWRg8U8yLLCekrKshzm1Q+DJH3cI8ifbDw=="/>
         </item>
         <item>
             <title>Version 1.124</title>
@@ -216,7 +216,7 @@
             <sparkle:version>16</sparkle:version>
             <sparkle:shortVersionString>1.124</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.124.zip" length="38564684" type="application/octet-stream" sparkle:edSignature="/2zxvXuQFKYxqNlMSYAMhzbfnHcBGWKFKxIZk9fMhKENLZD0EQSLA95FNKxTUjw9Dgn+4W+TtloL+PredjIqCQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.124.zip" length="38564684" type="application/octet-stream" sparkle:edSignature="/2zxvXuQFKYxqNlMSYAMhzbfnHcBGWKFKxIZk9fMhKENLZD0EQSLA95FNKxTUjw9Dgn+4W+TtloL+PredjIqCQ=="/>
         </item>
         <item>
             <title>Version 1.123</title>
@@ -225,7 +225,7 @@
             <sparkle:version>15</sparkle:version>
             <sparkle:shortVersionString>1.123</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.123.zip" length="38565554" type="application/octet-stream" sparkle:edSignature="OO0NLrbpynNHzim3hsBKGCzqCSll9kIovlmX8/nzdDWDFJ/eBvYeZpqhKGSQ1GGwkEgGtMnhXS4WfSoPIbbsBQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.123.zip" length="38565554" type="application/octet-stream" sparkle:edSignature="OO0NLrbpynNHzim3hsBKGCzqCSll9kIovlmX8/nzdDWDFJ/eBvYeZpqhKGSQ1GGwkEgGtMnhXS4WfSoPIbbsBQ=="/>
         </item>
         <item>
             <title>Version 1.121</title>
@@ -234,7 +234,7 @@
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>1.121</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.121.zip" length="38467092" type="application/octet-stream" sparkle:edSignature="qeApy3kzOhpooG4gdnlOBjVU2lGNvzrIFxwwgE3R+tdidjV+9DsHNToiTFVKo3BKv3PYY5x4o9/HE7x6cQ3zAQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.121.zip" length="38467092" type="application/octet-stream" sparkle:edSignature="qeApy3kzOhpooG4gdnlOBjVU2lGNvzrIFxwwgE3R+tdidjV+9DsHNToiTFVKo3BKv3PYY5x4o9/HE7x6cQ3zAQ=="/>
         </item>
         <item>
             <title>Version 1.12</title>
@@ -243,7 +243,7 @@
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.12.zip" length="38463938" type="application/octet-stream" sparkle:edSignature="QAhbRWUfgrH6XLKL7BGOmENfPD99ITkdIJBxxLy2E+kByslBGsGo4aa3K6QOVuw9AItHOwvPH+7+j1RNi4eVCA=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.12.zip" length="38463938" type="application/octet-stream" sparkle:edSignature="QAhbRWUfgrH6XLKL7BGOmENfPD99ITkdIJBxxLy2E+kByslBGsGo4aa3K6QOVuw9AItHOwvPH+7+j1RNi4eVCA=="/>
         </item>
         <item>
             <title>Version 1.11</title>
@@ -252,7 +252,7 @@
             <sparkle:version>11</sparkle:version>
             <sparkle:shortVersionString>1.11</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.11.zip" length="38190590" type="application/octet-stream" sparkle:edSignature="d6z455wU7zruVPJs7JV8UxwQTy0T3pcLmTtrjRcgQcmAkDILtTB7zmCpBNNxE7QIcihfd6rVoVazbgj5Wal2Bg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.11.zip" length="38190590" type="application/octet-stream" sparkle:edSignature="d6z455wU7zruVPJs7JV8UxwQTy0T3pcLmTtrjRcgQcmAkDILtTB7zmCpBNNxE7QIcihfd6rVoVazbgj5Wal2Bg=="/>
         </item>
         <item>
             <title>Version 1.10</title>
@@ -261,7 +261,7 @@
             <sparkle:version>10</sparkle:version>
             <sparkle:shortVersionString>1.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.10.zip" length="33154928" type="application/octet-stream" sparkle:edSignature="IPr99zrOjG85lrbQqCc2zxZTaR+no3OqciuT7ZyZpMVXSWgUM/2uA0rEuMvTrYW2N0Z4e/wei4GE09Wc9M2yAg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.10.zip" length="33154928" type="application/octet-stream" sparkle:edSignature="IPr99zrOjG85lrbQqCc2zxZTaR+no3OqciuT7ZyZpMVXSWgUM/2uA0rEuMvTrYW2N0Z4e/wei4GE09Wc9M2yAg=="/>
         </item>
         <item>
             <title>Version 1.09</title>
@@ -270,7 +270,7 @@
             <sparkle:version>9</sparkle:version>
             <sparkle:shortVersionString>1.09</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.09.zip" length="32857996" type="application/octet-stream" sparkle:edSignature="09JWIN0oYKr148it5iHltEUYDXIaYIMvfVwC8LAeoUkooXEUTC/lXMJAe1LLPFAvndkn4OmvmFerQ6dpuIZMCw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.09.zip" length="32857996" type="application/octet-stream" sparkle:edSignature="09JWIN0oYKr148it5iHltEUYDXIaYIMvfVwC8LAeoUkooXEUTC/lXMJAe1LLPFAvndkn4OmvmFerQ6dpuIZMCw=="/>
         </item>
         <item>
             <title>Version 1.07</title>
@@ -279,7 +279,7 @@
             <sparkle:version>8</sparkle:version>
             <sparkle:shortVersionString>1.07</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.07.zip" length="32191420" type="application/octet-stream" sparkle:edSignature="ZNc/hzbn6AY5qb587Jl84uFtt9hbYUgjr17nZZmheVS13UAjl5h2Ss/Kses6UEWnVH+qnFcuj4iXJrW9HObTCw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.07.zip" length="32191420" type="application/octet-stream" sparkle:edSignature="ZNc/hzbn6AY5qb587Jl84uFtt9hbYUgjr17nZZmheVS13UAjl5h2Ss/Kses6UEWnVH+qnFcuj4iXJrW9HObTCw=="/>
         </item>
         <item>
             <title>Version 1.06</title>
@@ -288,7 +288,7 @@
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.06</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.06.zip" length="31448840" type="application/octet-stream" sparkle:edSignature="ZSLyYOWatT41SN2LuwkXL2YvK53wcwRcMzT5NDP8LSX0LacSUnztxKIcctMgWxJWohWaGlZC2cUXF3G/m7NZCQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.06.zip" length="31448840" type="application/octet-stream" sparkle:edSignature="ZSLyYOWatT41SN2LuwkXL2YvK53wcwRcMzT5NDP8LSX0LacSUnztxKIcctMgWxJWohWaGlZC2cUXF3G/m7NZCQ=="/>
         </item>
         <item>
             <title>Version 1.05</title>
@@ -297,7 +297,7 @@
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.05</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.05.zip" length="32504625" type="application/octet-stream" sparkle:edSignature="2BRvJSsNTAkS7pw/0YIFk+GGv2w8O7XzZ2OqCMiPt/LZUzrrYMu+basY9aLEzZoO7aZ2RhKORe00xEuFqwiUAQ=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.05.zip" length="32504625" type="application/octet-stream" sparkle:edSignature="2BRvJSsNTAkS7pw/0YIFk+GGv2w8O7XzZ2OqCMiPt/LZUzrrYMu+basY9aLEzZoO7aZ2RhKORe00xEuFqwiUAQ=="/>
         </item>
         <item>
             <title>Version 1.04</title>
@@ -306,7 +306,7 @@
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.04</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.04.zip" length="32438594" type="application/octet-stream" sparkle:edSignature="hzFsq9N1/zEQtnSd5yA13iJorMDYlexOUEcGehZwOeCo4IcChED3v5i/FESXuljLZ6q0ZEajRZmqaSSque4eCw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.04.zip" length="32438594" type="application/octet-stream" sparkle:edSignature="hzFsq9N1/zEQtnSd5yA13iJorMDYlexOUEcGehZwOeCo4IcChED3v5i/FESXuljLZ6q0ZEajRZmqaSSque4eCw=="/>
         </item>
         <item>
             <title>Version 1.03</title>
@@ -315,7 +315,7 @@
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>1.03</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.03.zip" length="32326332" type="application/octet-stream" sparkle:edSignature="/Oxba68yKWEgoVzYlLaxGgVFzYiTQGiW6fK0ZouIXAzVfxiMCDyvXO9ph6kKh1DRKQDsNsTd3nzMR1br4suhBg=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.03.zip" length="32326332" type="application/octet-stream" sparkle:edSignature="/Oxba68yKWEgoVzYlLaxGgVFzYiTQGiW6fK0ZouIXAzVfxiMCDyvXO9ph6kKh1DRKQDsNsTd3nzMR1br4suhBg=="/>
         </item>
         <item>
             <title>Version 1.02</title>
@@ -324,11 +324,7 @@
             <sparkle:version>3</sparkle:version>
             <sparkle:shortVersionString>1.02</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.02.zip" length="27830048" type="application/octet-stream" sparkle:edSignature="lf6tl36yb3IPlosgxQM7ZIJGN/u5lO9qHxThLE1SkLcVp5h8fGKl27BnYlhl09A0DKQbcXm/em51pQ9NRfPQBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder3-2.delta" sparkle:deltaFrom="2" length="727786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WWVWYqr5/PNFLeUOJDDcW84Dz6zt6PwlI78FvJdGxzakeCcOeUOELVqBeBydE0Xr5BpA9i5O24ycuDxPdRimCg=="/>
-                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder3-1.delta" sparkle:deltaFrom="1" length="856918" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IB9hEcDJURzvo4yzAxaeitVDEyAa065P716rczoj0XNdRnQoi7TJMkXh9t9Y5T5Mt+Wav7wfRMwbJ68feLErBg=="/>
-            </sparkle:deltas>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.02.zip" length="27830048" type="application/octet-stream" sparkle:edSignature="lf6tl36yb3IPlosgxQM7ZIJGN/u5lO9qHxThLE1SkLcVp5h8fGKl27BnYlhl09A0DKQbcXm/em51pQ9NRfPQBw=="/>
         </item>
         <item>
             <title>Version 1.01</title>
@@ -336,10 +332,7 @@
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>1.01</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.01.zip" length="27794143" type="application/octet-stream" sparkle:edSignature="zM20l+E/B16tjcp56Z8efQMGDUUl2OgorTOLysP1dI6gyAVHGnIziMC56rlFss0Gi0VkMSqwh3J0xIIb/057DA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/Parallel%20Media%20Encoder2-1.delta" sparkle:deltaFrom="1" length="712906" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K/IO+iTeJl87Hqa+u09zy5SAGsrqrkMSSPiCZSCqSmR3X5YksC1bOhKh9FEMQ1UsOHO4zAYmFnBw8Qg/7keNBQ=="/>
-            </sparkle:deltas>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.01.zip" length="27794143" type="application/octet-stream" sparkle:edSignature="zM20l+E/B16tjcp56Z8efQMGDUUl2OgorTOLysP1dI6gyAVHGnIziMC56rlFss0Gi0VkMSqwh3J0xIIb/057DA=="/>
         </item>
         <item>
             <title>1.0</title>
@@ -347,7 +340,7 @@
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://marinadedduck.github.io/parallelmediaencoder-releases/updates/ParallelMediaEncoder-1.0.zip" length="27776608" type="application/octet-stream" sparkle:edSignature="hyWY8+DPNjEjEz50FVjxBdcYB9UXl4oMJh+AMNYBIAb4TGD9+E0ud3TEHqQfqvvQSJEWEpUCCeF8YYvZ3MkOCw=="/>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.0.zip" length="27776608" type="application/octet-stream" sparkle:edSignature="hyWY8+DPNjEjEz50FVjxBdcYB9UXl4oMJh+AMNYBIAb4TGD9+E0ud3TEHqQfqvvQSJEWEpUCCeF8YYvZ3MkOCw=="/>
         </item>
     </channel>
 </rss>
