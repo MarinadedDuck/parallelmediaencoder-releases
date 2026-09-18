@@ -3,6 +3,15 @@
     <channel>
         <title>Parallel Media Encoder</title>
         <item>
+            <title>Version 1.147.0</title>
+            <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.147.0.html</sparkle:releaseNotesLink>
+            <pubDate>Fri, 18 Sep 2026 17:24:09 -0400</pubDate>
+            <sparkle:version>60</sparkle:version>
+            <sparkle:shortVersionString>1.147.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.5</sparkle:minimumSystemVersion>
+            <enclosure url="https://updates.parallelmediaencoder.com/updates/ParallelMediaEncoder-1.147.0.zip" length="66664903" type="application/octet-stream" sparkle:edSignature="IujwehUB14X9cr2LgjGKaRPxQAOD8M0zUUCQRUzjgkbdzdGE69lWWZBblG4RhFUEz+p8rtcFa+HBeJS9UV2wDQ=="/>
+        </item>
+        <item>
             <title>Version 1.146.04</title>
             <sparkle:releaseNotesLink>https://marinadedduck.github.io/parallelmediaencoder-releases/release-notes/1.146.04.html</sparkle:releaseNotesLink>
             <pubDate>Wed, 02 Sep 2026 18:44:35 -0400</pubDate>
